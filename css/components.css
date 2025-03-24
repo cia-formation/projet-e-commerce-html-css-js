@@ -413,3 +413,12 @@
     font-weight: 600;
     background: linear-gradient(75.04deg, #F4E8F3 0%, #F3EFF6 52.07%, #EEE0F9 102.02%);
 }
+
+/* Footer */
+footer {
+    background: linear-gradient(75.04deg, #F4E8F3 0%, #F3EFF6 52.07%, #EEE0F9 102.02%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+}
