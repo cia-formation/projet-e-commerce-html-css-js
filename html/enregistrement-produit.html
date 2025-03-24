@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <title>Enregistrement produits</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/pages/enregistrement_produit.css">
+</head>
+
+<body>
+    <main class="enregistrement-produit">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <aside>
+                <div class="heading">
+                    <span></span>
+                    <h1>MA BOUTIQUE</h1>
+                </div>
+                <div class="profile">
+                    <img src="../assets/images/shop.png" alt="Shop" />
+                    <p class="typography" style="color: black; font-size: 17px; font-weight: 600; text-align: center;">
+                        Welcome
+                    </p>
+                    <p class="typography"
+                        style="color: #FEAF00; font-size: 14px; font-weight: 500; text-align: center;">
+                        admin@email.com
+                    </p>
+                </div>
+
+                <div class="links">
+                    <a href="liste-produits.html" class="icon-link">
+                        <img src="../assets/icons/dashboard.svg" alt="Dashboard" />
+                        <span>Produits</span>
+                    </a>
+                    <a href="liste-produits.html" class="icon-link">
+                        <img src="../assets/icons/products.svg" alt="Products" />
+                        <span>Liste des produits</span>
+                    </a>
+                    <a href="enregistrement-produit.html" class="icon-link active-icon-link">
+                        <img src="../assets/icons/save.svg" alt="Save" />
+                        <span>Enregistrer</span>
+                    </a>
+                    <a href="mise-a-jour-produit.html" class="icon-link">
+                        <img src="../assets/icons/update.svg" alt="Update" />
+                        <span>Mettre a jour</span>
+                    </a>
+                </div>
+
+            </aside>
+            <a href="index.html" class="icon-link reversed-icon-link">
+                <img src="../assets/icons/logout.svg" alt="Logout" />
+                <span>Logout</span>
+            </a>
+        </div>
+
+        <form class="content">
+            <div class="toolbar">
+                <img src="../assets/icons/arrow-left.svg" alt="Arrow left" />
+                <img src="../assets/icons/bell.svg" alt="Bell" />
+            </div>
+
+            <section>
+                <p class="typography" style="color: black; font-size: 22px; font-weight: 700; text-align: start;">
+                    Enregistrement d’un produit
+                </p>
+                <div class="names">
+
+                    <div class="input-text">
+                        <label for="name">Nom</label>
+                        <input type="text" name="name" placeholder="Nom du produit" />
+                    </div>
+                    <div class="input-text">
+                        <label for="category">Categorie</label>
+                        <input type="text" name="category" placeholder="Categorie" />
+                    </div>
+                </div>
+                <div class="prices">
+                    <div class="input-text">
+                        <label for="price">Prix</label>
+                        <input type="number" name="price" placeholder="125 750" />
+                    </div>
+                    <div class="input-text">
+                        <label for="promoPrice">Prix promo</label>
+                        <input type="number" name="promoPrice" placeholder="118 000" />
+                    </div>
+                </div>
+                <div class="stats">
+                    <div class="numbers">
+
+                        <div class="input-text">
+                            <label for="promoPrice">Nombre de notes</label>
+                            <input type="number" name="promoPrice" placeholder="22" />
+                        </div>
+                        <div class="input-text">
+                            <label for="promoPrice">Moyenne sur 5</label>
+                            <input type="number" name="promoPrice" placeholder="4" />
+                        </div>
+                    </div>
+                    <div class="input-text">
+                        <label for="quantity">Quantite en stock</label>
+                        <input type="number" name="quantity" placeholder="120" />
+                    </div>
+                </div>
+                <div class="input-text">
+                    <label for="shortDescription">Description courte</label>
+                    <input type="text" name="shortDescription" placeholder="Description courte du produit" />
+                </div>
+                <div class="input-text">
+                    <label for="image">Photo</label>
+                    <input type="file" name="image" placeholder="photo/du/produit.jpg" />
+                </div>
+                <div class="input-text">
+                    <label for="description">Description</label>
+                    <textarea name="description" rows="8"
+                        placeholder="Description longue du produit pouvant tenir sur plusieurs lignes"></textarea>
+                </div>
+                <button class="button" onclick="window.location.href='liste-products.html'">Enregistrer</button>
+            </section>
+        </form>
+    </main>
+</body>
+
+</html>

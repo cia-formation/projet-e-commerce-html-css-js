@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <title>Enregistrement produits</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/pages/liste_produit.css">
+</head>
+
+<body>
+    <main class="liste-produits">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <aside>
+                <div class="heading">
+                    <span></span>
+                    <h1>MA BOUTIQUE</h1>
+                </div>
+                <div class="profile">
+                    <img src="../assets/images/shop.png" alt="Shop" />
+                    <p class="typography" style="color: black; font-size: 17px; font-weight: 600; text-align: center;">
+                        Welcome
+                    </p>
+                    <p class="typography"
+                        style="color: #FEAF00; font-size: 14px; font-weight: 500; text-align: center;">
+                        admin@email.com
+                    </p>
+                </div>
+
+                <div class="links">
+                    <a href="liste-produits.html" class="icon-link">
+                        <img src="../assets/icons/dashboard.svg" alt="Dashboard" />
+                        <span>Produits</span>
+                    </a>
+                    <a href="liste-produits.html" class="icon-link">
+                        <img src="../assets/icons/products.svg" alt="Products" />
+                        <span>Liste des produits</span>
+                    </a>
+                    <a href="enregistrement-produit.html" class="icon-link">
+                        <img src="../assets/icons/save.svg" alt="Save" />
+                        <span>Enregistrer</span>
+                    </a>
+                    <a href="mise-a-jour-produit.html" class="icon-link active-icon-link">
+                        <img src="../assets/icons/update.svg" alt="Update" />
+                        <span>Mettre a jour</span>
+                    </a>
+                </div>
+
+            </aside>
+            <a href="index.html" class="icon-link reversed-icon-link">
+                <img src="../assets/icons/logout.svg" alt="Logout" />
+                <span>Logout</span>
+            </a>
+        </div>
+
+        <form class="content">
+            <div class="toolbar">
+                <img src="../assets/icons/arrow-left.svg" alt="Arrow left" />
+                <img src="../assets/icons/bell.svg" alt="Bell" />
+            </div>
+
+            <section>
+                <div class="action-heading">
+                    <p class="typography" style="color: black; font-size: 22px; font-weight: 700; text-align: start;">
+                        Liste des produits
+                    </p>
+                    <div class="action">
+                        <img src="../assets/icons/sort.svg" alt="Sort icon">
+                        <button class="button" onclick="window.location.href='enregistrement-produit.html'">AJOUTER
+                            NOUVEAU PRODUIT</button>
+                    </div>
+                </div>
+
+
+                <table class="products-table">
+                    <thead>
+                        <tr>
+                            <th>#ID</th>
+                            <th>Photo</th>
+                            <th>Name</th>
+                            <th>Category</th>
+                            <th>Price</th>
+                            <th>Stock Quantity</th>
+                            <th>Date Added</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><img src="../assets/images/product.png" alt="Product 1"
+                                    style="width: 50px; height: 50px;"></td>
+                            <td>Product A</td>
+                            <td>Category 1</td>
+                            <td>$10.00</td>
+                            <td>100</td>
+                            <td>2025-03-20</td>
+                            <td>
+                                <img src="../assets/icons/edit.svg" alt="Edit icon" class="action-icon">
+                                <img src="../assets/icons/delete.svg" alt="Delete icon" class="action-icon">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><img src="../assets/images/product.png" alt="Product 2"
+                                    style="width: 50px; height: 50px;"></td>
+                            <td>Product B</td>
+                            <td>Category 2</td>
+                            <td>$15.00</td>
+                            <td>50</td>
+                            <td>2025-03-21</td>
+                            <td>
+                                <img src="../assets/icons/edit.svg" alt="Edit icon" class="action-icon">
+                                <img src="../assets/icons/delete.svg" alt="Delete icon" class="action-icon">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><img src="../assets/images/product.png" alt="Product 3"
+                                    style="width: 50px; height: 50px;"></td>
+                            <td>Product C</td>
+                            <td>Category 3</td>
+                            <td>$20.00</td>
+                            <td>30</td>
+                            <td>2025-03-22</td>
+                            <td>
+                                <img src="../assets/icons/edit.svg" alt="Edit icon" class="action-icon">
+                                <img src="../assets/icons/delete.svg" alt="Delete icon" class="action-icon">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td><img src="../assets/images/product.png" alt="Product 4"
+                                    style="width: 50px; height: 50px;"></td>
+                            <td>Product D</td>
+                            <td>Category 4</td>
+                            <td>$25.00</td>
+                            <td>20</td>
+                            <td>2025-03-23</td>
+                            <td>
+                                <img src="../assets/icons/edit.svg" alt="Edit icon" class="action-icon">
+                                <img src="../assets/icons/delete.svg" alt="Delete icon" class="action-icon">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td><img src="../assets/images/product.png" alt="Product 5"
+                                    style="width: 50px; height: 50px;"></td>
+                            <td>Product E</td>
+                            <td>Category 5</td>
+                            <td>$30.00</td>
+                            <td>10</td>
+                            <td>2025-03-24</td>
+                            <td>
+                                <img src="../assets/icons/edit.svg" alt="Edit icon" class="action-icon">
+                                <img src="../assets/icons/delete.svg" alt="Delete icon" class="action-icon">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </form>
+    </main>
+</body>
+
+</html>
