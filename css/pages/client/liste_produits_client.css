@@ -1,0 +1,30 @@
+.liste-produits-client {
+    display: grid;
+    gap: 40px;
+    width: 100%;
+    padding: 150px 75px;
+    max-width: 1500px;
+    margin: 0 auto;
+    background-color: white;
+    
+}
+
+.liste-produits-client .selects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+.liste-produits-client .selects aside{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+.liste-produits-client .products{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
