@@ -12,7 +12,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
-    <title>Enregistrement produits</title>
+    <title>Liste produits</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
@@ -45,7 +45,7 @@
                         <img src="../assets/icons/dashboard.svg" alt="Dashboard" />
                         <span>Produits</span>
                     </a>
-                    <a href="liste-produits.html" class="icon-link">
+                    <a href="liste-produits.html" class="icon-link active-icon-link">
                         <img src="../assets/icons/products.svg" alt="Products" />
                         <span>Liste des produits</span>
                     </a>
@@ -53,7 +53,7 @@
                         <img src="../assets/icons/save.svg" alt="Save" />
                         <span>Enregistrer</span>
                     </a>
-                    <a href="mise-a-jour-produit.html" class="icon-link active-icon-link">
+                    <a href="mise-a-jour-produit.html" class="icon-link">
                         <img src="../assets/icons/update.svg" alt="Update" />
                         <span>Mettre a jour</span>
                     </a>
@@ -79,8 +79,7 @@
                     </p>
                     <div class="action">
                         <img src="../assets/icons/sort.svg" alt="Sort icon">
-                        <button class="button" onclick="window.location.href='enregistrement-produit.html'">AJOUTER
-                            NOUVEAU PRODUIT</button>
+                        <a class="button" onclick="window.location.href='enregistrement-produit.html'">AJOUTER NOUVEAU PRODUIT</a>
                     </div>
                 </div>
 
@@ -109,8 +108,9 @@
                             <td>100</td>
                             <td>2025-03-20</td>
                             <td>
-                                <img src="../assets/icons/edit.svg" alt="Edit icon" class="action-icon">
-                                <img src="../assets/icons/delete.svg" alt="Delete icon" class="action-icon">
+                                <img src="../assets/icons/edit.svg" alt="Edit icon" class="action-icon" onclick="window.location.href='mise-a-jour-produit.html'">
+                                <img src="../assets/icons/delete.svg" alt="Delete icon" class="action-icon"
+                                    onclick="openModal()">
                             </td>
                         </tr>
                         <tr>
@@ -123,8 +123,9 @@
                             <td>50</td>
                             <td>2025-03-21</td>
                             <td>
-                                <img src="../assets/icons/edit.svg" alt="Edit icon" class="action-icon">
-                                <img src="../assets/icons/delete.svg" alt="Delete icon" class="action-icon">
+                                <img src="../assets/icons/edit.svg" alt="Edit icon" class="action-icon" onclick="window.location.href='mise-a-jour-produit.html'">
+                                <img src="../assets/icons/delete.svg" alt="Delete icon" class="action-icon"
+                                    onclick="openModal()">
                             </td>
                         </tr>
                         <tr>
@@ -137,8 +138,9 @@
                             <td>30</td>
                             <td>2025-03-22</td>
                             <td>
-                                <img src="../assets/icons/edit.svg" alt="Edit icon" class="action-icon">
-                                <img src="../assets/icons/delete.svg" alt="Delete icon" class="action-icon">
+                                <img src="../assets/icons/edit.svg" alt="Edit icon" class="action-icon" onclick="window.location.href='mise-a-jour-produit.html'">
+                                <img src="../assets/icons/delete.svg" alt="Delete icon" class="action-icon"
+                                    onclick="openModal()">
                             </td>
                         </tr>
                         <tr>
@@ -151,8 +153,9 @@
                             <td>20</td>
                             <td>2025-03-23</td>
                             <td>
-                                <img src="../assets/icons/edit.svg" alt="Edit icon" class="action-icon">
-                                <img src="../assets/icons/delete.svg" alt="Delete icon" class="action-icon">
+                                <img src="../assets/icons/edit.svg" alt="Edit icon" class="action-icon" onclick="window.location.href='mise-a-jour-produit.html'">
+                                <img src="../assets/icons/delete.svg" alt="Delete icon" class="action-icon"
+                                    onclick="openModal()">
                             </td>
                         </tr>
                         <tr>
@@ -165,8 +168,9 @@
                             <td>10</td>
                             <td>2025-03-24</td>
                             <td>
-                                <img src="../assets/icons/edit.svg" alt="Edit icon" class="action-icon">
-                                <img src="../assets/icons/delete.svg" alt="Delete icon" class="action-icon">
+                                <img src="../assets/icons/edit.svg" alt="Edit icon" class="action-icon" onclick="window.location.href='mise-a-jour-produit.html'">
+                                <img src="../assets/icons/delete.svg" alt="Delete icon" class="action-icon"
+                                    onclick="openModal()">
                             </td>
                         </tr>
                     </tbody>
@@ -174,6 +178,33 @@
             </section>
         </form>
     </main>
+
+    <!-- Modal -->
+    <main class="modal">
+        <div class="content">
+            <div class="action-heading" style="border:none;">
+                <div class="heading">
+                    <span style="background-color: #EA4637;"></span>
+                    <h1>MA BOUTIQUE</h1>
+                </div>
+                <img src="../assets/icons/close.svg" alt="Close" class="action-icon" onclick="closeModal()" />
+            </div>
+
+            <p class="typography" style="color: black; font-size: 16px; font-weight: 600; text-align: start;">
+                Confirmer la suppression du produit.
+            </p>
+
+            <div class='input-text input-text-inlined'>
+                <label for='name'>Name</label>
+                <input type='text' name='name' placeholder='Headphone' />
+            </div>
+
+            <button style="background-color: #EA4637;width: 80%;margin: 0 auto;" class="button"
+                onclick="window.location.href='liste-produits.html'">CONFIRMER</button>
+
+        </div>
+    </main>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>
