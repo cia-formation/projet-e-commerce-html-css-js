@@ -414,6 +414,122 @@
     background: linear-gradient(75.04deg, #F4E8F3 0%, #F3EFF6 52.07%, #EEE0F9 102.02%);
 }
 
+/* Cart */
+.cart {
+    position: relative;
+}
+
+.cart .icon {
+    height: 100%;
+    width: 100%;
+}
+
+.cart span {
+    position: absolute;
+    top: -15px;
+    right: -5px;
+    background-color: #1D364D;
+    border: 1.5px solid #FFFFFF;
+    border-radius: 50%;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* Notification */
+.notification {
+    position: relative;
+}
+
+.notification .icon {
+    height: 100%;
+    width: 100%;
+}
+
+.notification span {
+    position: absolute;
+    top: 2.5px;
+    right: 2.5px;
+    background-color: #D75951;
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    animation: ping-animation 1.5s infinite;
+}
+
+
+@keyframes ping-animation {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.5);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+/* User */
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.user div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/* Header */
+header {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    padding: 20px 80px;
+    height: 100px;
+    border-bottom: 1px solid #EDEDED;
+}
+
+header .logo p {
+    font-weight: 800;
+    font-style: italic;
+    font-size: 32.8px;
+    line-height: 100%;
+    color: #0D3356;
+}
+
+header .links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+}
+
+header .links a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: #1D364D;
+}
+
+header .user-info {
+    display: flex;
+    gap: 15px;
+}
+
 /* Footer */
 footer {
     background: linear-gradient(75.04deg, #F4E8F3 0%, #F3EFF6 52.07%, #EEE0F9 102.02%);
