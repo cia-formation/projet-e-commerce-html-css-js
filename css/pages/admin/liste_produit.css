@@ -1,6 +1,7 @@
 .liste-produits {
     display: flex;
     width: 100%;
+    margin-bottom: auto;
 }
 
 .liste-produits .content {
