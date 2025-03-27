@@ -65,8 +65,69 @@
 
 .produit-unique .content .main-details .infos{
     display: flex;
+    flex-direction: column;
     justify-content: start;
     align-items: start;
+    gap: 20px;
+}
+.produit-unique .content .main-details .infos aside{
+    display: grid;
+    gap: 10px;
+    width: 100%;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #E4E4E4;
+}
+.produit-unique .content .main-details .infos aside p{
+    text-align: start;
+}
+.produit-unique .content .main-details .infos .name div:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+.produit-unique .content .main-details .infos .name div:nth-child(1) div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.produit-unique .content .main-details .infos .price div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.produit-unique .content .main-details .infos .price div div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.produit-unique .content .main-details .infos .messages{
+    border: 1px solid #E4E4E4;
+    padding: 17px;
+    border-radius: 14px;
+    display: grid;
+    gap: 21px;
+    width: 100%;
+}
+.produit-unique .content .main-details .infos .size{
+    display: grid;
+    gap: 20px;
+}
+.produit-unique .content .main-details .infos .size .checks{
+    display: flex;
+    gap: 10px;
+}
+.produit-unique .content .main-details .infos .messages .message{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+.produit-unique .content .main-details .infos .messages .message div{
+    display: grid;
+    gap: 10px;
 }
 .produit-unique .content .description {
     display: grid;
