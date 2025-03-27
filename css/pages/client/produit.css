@@ -112,6 +112,19 @@
     gap: 21px;
     width: 100%;
 }
+.produit-unique .content .main-details .infos .quantity{
+    display: flex;
+    gap: 20px;
+    margin: 5px 0;
+}
+.produit-unique .content .main-details .infos .colors{
+    display: grid;
+    gap: 20px;
+}
+.produit-unique .content .main-details .infos .colors .checks{
+    display: flex;
+    gap: 20px;
+}
 .produit-unique .content .main-details .infos .size{
     display: grid;
     gap: 20px;

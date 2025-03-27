@@ -138,45 +138,69 @@
                         </div>
                     </aside>
                     <!-- Couleurs -->
-                    <aside class="price">
+                    <aside class="colors">
                         <p class="typography">Choose a Color</p>
-                        <div>
-
+                        <div class="checks">
+                            <div class="color-radio">
+                                <input type="radio" name="color" id="orange" value="orange" checked>
+                                <img src="../../assets/icons/check-alt.svg" alt="check icon" class="icon" />
+                            </div>
+                            <div class="color-radio">
+                                <input type="radio" name="color" id="green" value="green" style="background-color: #BBD278 ;">
+                            </div>
+                            <div class="color-radio">
+                                <input type="radio" name="color" id="purple" value="purple" style="background-color: #BBC1F8 ;">
+                            </div>
+                            <div class="color-radio">
+                                <input type="radio" name="color" id="pink" value="pink" style="background-color: #FFD3F8 ;">
+                            </div>
                         </div>
                     </aside>
-                    <!-- Taille -->
                     <aside class="size">
                         <p class="typography">Choose a Size</p>
                         <div class="checks">
-                            <div class="check active">
+                            <div class="radio active">
                                 <input type="radio" name="size" id="small" value="small" checked>
                                 <label for="small">Small</label>
                             </div>
-                            <div class="check">
+                            <div class="radio">
                                 <input type="radio" name="size" id="small" value="small">
                                 <label for="small">Small</label>
                             </div>
-                            <div class="check">
+                            <div class="radio">
                                 <input type="radio" name="size" id="small" value="small">
                                 <label for="small">Small</label>
                             </div>
-                            <div class="check">
+                            <div class="radio">
                                 <input type="radio" name="size" id="small" value="small">
                                 <label for="small">Small</label>
                             </div>
-                            <div class="check">
+                            <div class="radio">
                                 <input type="radio" name="size" id="small" value="small">
                                 <label for="small">Small</label>
                             </div>
                         </div>
                     </aside>
-                    <!-- Quantité -->
+                    <div class="quantity">
+                        <div class="quantity-input">
+                            <span>-</span>
+                            <input type="number" min="1" max="100" value="1" class="quantity-input-field">
+                            <span>+</span>
+                        </div>
+                        <button class='button button-rounded' style="background-color: #3A4980;">
+                            <img src="../../assets/icons/bag-white.svg" alt="bag icon" class="icon" />
+                            <span>Ajouter au panier</span>
+                        </button>
+
+                    </div>
                     <div class="messages">
                         <div class="message">
                             <img src="../../assets/icons/bus.svg" alt="bus icon" class="icon" />
                             <div>
-                                <p class="typography" style="font-weight: 700; font-size: 17px; color: #1D364D;">Free Delivery</p>
-                                <p class="typography" style="font-size: 14px;">Enter your Postal code for Delivery Availability</p>
+                                <p class="typography" style="font-weight: 700; font-size: 17px; color: #1D364D;">Free
+                                    Delivery</p>
+                                <p class="typography" style="font-size: 14px;">Enter your Postal code for Delivery
+                                    Availability</p>
                             </div>
                         </div>
                         <div class="divider"></div>
