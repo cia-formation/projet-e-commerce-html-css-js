@@ -9,6 +9,11 @@
     margin-left: auto;
     padding-bottom: 50px;
 }
+@media screen and (max-width: 1400px) {
+    .enregistrement-produit .content {
+        width: calc(100% - 300px);
+    }
+}
 .enregistrement-produit .content section{
     padding: 0 30px 0 50px;
     display: flex;

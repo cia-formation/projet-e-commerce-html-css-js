@@ -9,7 +9,14 @@
     margin-left: auto;
     padding-bottom: 50px;
 }
-.liste-produits .content section{
+
+@media screen and (max-width: 1400px) {
+    .liste-produits .content {
+        width: calc(100% - 300px);
+    }
+}
+
+.liste-produits .content section {
     padding: 0 30px 0 50px;
     display: flex;
     flex-direction: column;
@@ -22,18 +29,22 @@
     border-collapse: collapse;
     text-align: center;
 }
-.liste-produits .content section .products-table thead tr th{
+
+.liste-produits .content section .products-table thead tr th {
     padding: 10px 0;
     color: #ACACAC;
 }
-.liste-produits .content section .products-table tbody{
+
+.liste-produits .content section .products-table tbody {
     margin-bottom: 10px;
     background-color: #ACACAC;
 }
-.liste-produits .content section .products-table tbody tr{
+
+.liste-produits .content section .products-table tbody tr {
     margin-bottom: 10px;
 }
-.liste-produits .content section .products-table tbody tr td{
+
+.liste-produits .content section .products-table tbody tr td {
     padding: 10px 0;
     background-color: white;
     border-top: 15px solid #F8F8F8;
