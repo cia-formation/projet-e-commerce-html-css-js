@@ -5,7 +5,7 @@
     <img src="https://img.shields.io/badge/-javascript-black?style=for-the-badge&logoColor=white&logo=javascript&color=yellow" alt="js" />
   </div>
   <h3 align="center">Une application web de e-commerce</h3>
-  <a align="center" href='https://www.figma.com/design/1adKZcdECK6WTJUvoiT7bj/Product-e-commerce-web-app?node-id=0-1&p=f&t=lZRQ3M6XpICjCiny-0'>🎨 Lien figma</a>
+  <a align="center" href='https://www.figma.com/design/1adKZcdECK6WTJUvoiT7bj/Product-e-commerce-web-app?node-id=0-1&p=f&t=lZRQ3M6XpICjCiny-0' target='_blank'>🎨 Lien figma</a>
 </div>
 
 ### 📋 Table des matières
