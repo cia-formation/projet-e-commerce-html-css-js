@@ -51,8 +51,9 @@ Assurez-vous d'avoir installé les éléments suivants sur votre machine :
 > 🗂️ icons
 
 📁 css
-> 🗂️ admin <br>
-> 🗂️ clients
+> 🗂️ pages <br>
+>> 🗂️ admin <br>
+>> 🗂️ client 
 
 📁 html
 > 🗂️ admin <br>
