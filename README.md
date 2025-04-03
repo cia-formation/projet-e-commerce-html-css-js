@@ -40,9 +40,9 @@ Son principal objectif est de d'approfondir les compétences de bases en dévelo
 
 Assurez-vous d'avoir installé les éléments suivants sur votre machine :
 
-- Un navigateur web, ex : [Chrome](https://www.google.com/intl/fr/chrome/){:target="_blank"}
-- Un éditeur de texte, ex : [VSCode](https://code.visualstudio.com/){:target="_blank"}
-- Les images et icons : [Lien de telechargement](https://drive.google.com/file/d/1jQ05AIsFan21ZTsUVp_1bnfLYBRH_i6S/view?usp=drive_link){:target="_blank"}
+- Un navigateur web, ex : <a href="https://www.google.com/intl/fr/chrome/" target="_blank" rel="noopener noreferrer">Chrome</a>
+- Un éditeur de texte, ex : <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">VSCode</a> 
+- Les images et icons : <a href="https://drive.google.com/file/d/1jQ05AIsFan21ZTsUVp_1bnfLYBRH_i6S/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Lien de telechargement</a> 
 
 ## <a name="structure" id="structure">📂 4. Structure du projet</a>
 
