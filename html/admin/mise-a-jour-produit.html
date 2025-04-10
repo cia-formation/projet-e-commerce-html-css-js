@@ -12,12 +12,12 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
-    <title>Mise a jour produit</title>
+    <title>Mise a jour Produit</title>
 
     <!-- CSS -->
+    <link rel="stylesheet" href="../../css/composants.css">
     <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="../../css/components.css">
-    <link rel="stylesheet" href="../../css/pages/admin/enregistrement_produit.css">
+    <link rel="stylesheet" href="../../css/pages/admin/enregistrement-produit.css">
 </head>
 
 <body>
@@ -29,101 +29,108 @@
                     <span></span>
                     <h1>MA BOUTIQUE</h1>
                 </div>
+
                 <div class="profile">
-                    <img src="../../assets/images/shop.png" alt="Shop" />
-                    <p class="typography" style="color: black; font-size: 17px; font-weight: 600; text-align: center;">
+                    <img src="../../assets/images/shop.png" alt="profile">
+                    <p class="typography" style="color: black; font-size: 17px; font-weight:600; text-align: center;">
                         Welcome
                     </p>
-                    <p class="typography"
-                        style="color: #FEAF00; font-size: 14px; font-weight: 500; text-align: center;">
-                        admin@email.com
+                    <p class="typography" style="color: #FEAF00; font-size: 14px; font-weight:500; text-align: center;">
+                        admin@email
                     </p>
                 </div>
 
                 <div class="links">
                     <a href="../admin/liste-produits.html" class="icon-link">
-                        <img src="../../assets/icons/dashboard.svg" alt="Products" />
+                        <img src="../../assets/icons/dashboard.svg" alt="dashboard">
                         <span>Produits</span>
                     </a>
                     <a href="../admin/enregistrement-produit.html" class="icon-link">
-                        <img src="../../assets/icons/save.svg" alt="Save" />
+                        <img src="../../assets/icons/save.svg" alt="create">
                         <span>Enregistrer</span>
                     </a>
-                    <a href="../admin/mise-a-jour-produit.html" class="icon-link active-icon-link">
-                        <img src="../../assets/icons/update.svg" alt="Update" />
+                    <a href="#" class="icon-link active-icon-link">
+                        <img src="../../assets/icons/update.svg" alt="update">
                         <span>Mettre a jour</span>
                     </a>
                 </div>
-
             </aside>
+
+
             <a href="../index.html" class="icon-link reversed-icon-link">
-                <img src="../../assets/icons/logout.svg" alt="Logout" />
+                <img src="../../assets/icons/logout.svg" alt="logout">
                 <span>Logout</span>
             </a>
         </div>
 
         <form class="content">
             <div class="toolbar">
-                <img src="../../assets/icons/arrow-left.svg" alt="Arrow left" />
-                <img src="../../assets/icons/bell.svg" alt="Bell" />
+                <img src="../../assets/icons/arrow-left.svg" alt="Arrow left">
+                <img src="../../assets/icons/bell.svg" alt="Bell">
             </div>
 
             <section>
-                <p class="typography" style="color: black; font-size: 22px; font-weight: 700; text-align: start;">
-                    Mise à jour d’un produit
+                <p class="typography" style="color: black; font-size: 22px; font-weight: 700; text-align:start;">
+                    Mise a jour d’un produit
                 </p>
-                <div class="names">
 
+                <div class="names">
                     <div class="input-text">
                         <label for="name">Nom</label>
-                        <input type="text" name="name" placeholder="Nom du produit" />
+                        <input type="text" name="name" id="name" placeholder="Nom du produit" value="Produit 1">
                     </div>
                     <div class="input-text">
                         <label for="category">Categorie</label>
-                        <input type="text" name="category" placeholder="Categorie" />
+                        <input type="text" name="category" id="category" placeholder="Categorie" value="Categorie 1">
                     </div>
                 </div>
+
                 <div class="prices">
                     <div class="input-text">
                         <label for="price">Prix</label>
-                        <input type="number" name="price" placeholder="125 750" />
+                        <input type="number" name="price" id="price" placeholder="125 750" value="700000000">
                     </div>
                     <div class="input-text">
-                        <label for="promoPrice">Prix promo</label>
-                        <input type="number" name="promoPrice" placeholder="118 000" />
+                        <label for="promo-price">Prix promo</label>
+                        <input type="number" name="promo-price" id="promo-price" placeholder="118 000" value="699999900">
                     </div>
                 </div>
+
                 <div class="stats">
                     <div class="numbers">
-
                         <div class="input-text">
-                            <label for="promoPrice">Nombre de notes</label>
-                            <input type="number" name="promoPrice" placeholder="22" />
+                            <label for="notes">Nombre de notes</label>
+                            <input type="number" name="notes" id="notes" placeholder="22" value="7">
                         </div>
                         <div class="input-text">
-                            <label for="promoPrice">Moyenne sur 5</label>
-                            <input type="number" name="promoPrice" placeholder="4" />
+                            <label for="average">Moyenne sur 5</label>
+                            <input type="number" name="average" id="average" placeholder="4" value="7">
                         </div>
                     </div>
                     <div class="input-text">
                         <label for="quantity">Quantite en stock</label>
-                        <input type="number" name="quantity" placeholder="120" />
+                        <input type="number" name="quantity" id="quantity" placeholder="120" value="7">
                     </div>
                 </div>
+
                 <div class="input-text">
-                    <label for="shortDescription">Description courte</label>
-                    <input type="text" name="shortDescription" placeholder="Description courte du produit" />
+                    <label for="short-description">Description courte</label>
+                    <input type="text" name="short-description" id="short-description" placeholder="Description courte du produit" value="Ceci est un produit de tres bonne qualite...">
                 </div>
+
                 <div class="input-text">
-                    <label for="image">Photo</label>
-                    <input type="file" name="image" placeholder="photo/du/produit.jpg" />
+                    <label for="photo">Photo</label>
+                    <input type="file" name="photo" id="photo" placeholder="Photo du produit" value='/image.png'>
                 </div>
+
                 <div class="input-text">
                     <label for="description">Description</label>
-                    <textarea name="description" rows="8"
-                        placeholder="Description longue du produit pouvant tenir sur plusieurs lignes"></textarea>
+                    <textarea name="description" id="description" rows="8" placeholder="Description longue du produit pouvant tenir sur plusieurs lignes" value="Ceci est un produit de tres bonne qualite, et valide par les meilleur vendeurs..."></textarea>
                 </div>
-                <button class="button" onclick="window.location.href='liste-products.html'">Mettre a jour</button>
+
+                <button type="button" class="button" onclick="window.location.href ='./liste-produits.html'">
+                    METTRE A JOUR
+                </button>
             </section>
         </form>
     </main>

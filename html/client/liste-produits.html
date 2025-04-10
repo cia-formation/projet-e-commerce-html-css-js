@@ -12,16 +12,17 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
-    <title>Liste produits</title>
+    <title>Liste Produits</title>
 
     <!-- CSS -->
+    <link rel="stylesheet" href="../../css/composants.css">
     <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="../../css/components.css">
-    <link rel="stylesheet" href="../../css/pages/client/liste_produits_client.css">
+    <link rel="stylesheet" href="../../css/pages/client/liste-produits.css">
 </head>
 
 <body>
     <main class="liste-produits-client">
+
         <header>
             <a href="#" class="logo">
                 <p class="typography">FashionHub</p>
@@ -31,330 +32,354 @@
                 <a href="#">Categories</a>
                 <a href="#">Marques</a>
                 <a href="#">Contacts</a>
-                <a href="#">FAQ’s</a>
+                <a href="#">FAQ</a>
             </div>
 
             <div class="user-info">
-                <div class='cart'>
-                    <img src='../../assets/icons/cart.svg' alt="cart" class="icon" />
+                <div class="cart">
+                    <img src="../../assets/icons/cart.svg" alt="cart" class="icon">
                     <span>3</span>
                 </div>
-
                 <div class="notification">
-                    <img src="../../assets/icons/notification.svg" alt="notification" class="icon" />
+                    <img src="../../assets/icons/notification.svg" alt="notification" class="icon">
                     <span></span>
                 </div>
 
-
                 <div class="user">
-                    <img src='../../assets/images/user.png' alt="user" class="icon" />
+                    <img src="../../assets/images/user.png" alt="user" class="icon">
                     <div>
-                        <p class="typography" style="color: #C0C3C6; font-size: 14px; font-weight: 500; line-height: 14.52px;">Good Morning!</p>
-                        <p class="typography" style="color: #1D364D; font-size: 16px; font-weight: 600; line-height: 19.36px;">Scarlet Johnson</p>
+                        <p class="typography"
+                            style="color: #COC3C6; font-size: 14px; font-weight: 500; line-height: 14.52px;">Good
+                            Morning!</p>
+                        <p class="typography"
+                            style="color: #1D364D; font-size: 16px; font-weight: 600; line-height: 19.36px;">Scarlet
+                            Johnson</p>
                     </div>
                 </div>
             </div>
         </header>
+
         <section class="content">
 
-            <div class='hero'>
+            <!-- Hero -->
+            <div class="hero">
                 <div class="action">
-                    <p class="typography" style="text-align: start; font-size: 34px; font-weight: 700; color: #3A4980;">
-                        Grab
-                        Upto 50% Off On Selected Headphone</p>
-                    <button class="button button-rounded"
-                        style="width: auto;background-color:#3A4980;color: white;"
-                        onclick="window.location.href='../index.html'">Buy Now</button>
-                </div>
+                    <p class="typography">
+                    <p class="typography" style="text-align:start; color: #1D364D; font-size: 34px; font-weight: 600;">
+                        Grab Upto 50% Off On Selected Headphone</p>
+                    Grab Upto 50% Off On Selected Headphone
+                    </p>
+                    <button class="button button-rounded" onclick="window.location.href='../index.html'"
+                        style="width:auto; background:#3A4980">Buy Now</button>
 
+                </div>
                 <div class="image">
-                    <img src='../../assets/images/hero.png' alt="Hero image" />
+                    <img src="../../assets/images/hero.png" alt="hero">
                 </div>
             </div>
 
+            <!-- Selects -->
             <div class="selects">
                 <aside>
                     <div class="select">
                         <p class="typography" style="font-weight: 500;">Headphone type</p>
-                        <img src='../../assets/icons/arrow-down.svg' alt="arrow-down" class="icon" />
+                        <img src="../../assets/icons/arrow-down.svg" alt="arrow down">
                     </div>
                     <div class="select">
-                        <p class="typography" style="font-weight: 500;">Price</p>
-                        <img src='../../assets/icons/arrow-down.svg' alt="arrow-down" class="icon" />
+                        <p class="typography" style="font-weight: 500;">HPrice</p>
+                        <img src="../../assets/icons/arrow-down.svg" alt="arrow down">
                     </div>
                     <div class="select">
                         <p class="typography" style="font-weight: 500;">Review</p>
-                        <img src='../../assets/icons/arrow-down.svg' alt="arrow-down" class="icon" />
+                        <img src="../../assets/icons/arrow-down.svg" alt="arrow down">
                     </div>
                     <div class="select">
                         <p class="typography" style="font-weight: 500;">Color</p>
-                        <img src='../../assets/icons/arrow-down.svg' alt="arrow-down" class="icon" />
+                        <img src="../../assets/icons/arrow-down.svg" alt="arrow down">
                     </div>
                     <div class="select">
                         <p class="typography" style="font-weight: 500;">Material</p>
-                        <img src='../../assets/icons/arrow-down.svg' alt="arrow-down" class="icon" />
+                        <img src="../../assets/icons/arrow-down.svg" alt="arrow down">
                     </div>
                     <div class="select">
                         <p class="typography" style="font-weight: 500;">Offer</p>
-                        <img src='../../assets/icons/arrow-down.svg' alt="arrow-down" class="icon" />
+                        <img src="../../assets/icons/arrow-down.svg" alt="arrow down">
                     </div>
                 </aside>
                 <div class="select">
                     <p class="typography" style="font-weight: 500;">Headphone type</p>
-                    <img src='../../assets/icons/arrow-down.svg' alt="arrow-down" class="icon" />
+                    <img src="../../assets/icons/arrow-down.svg" alt="arrow down">
                 </div>
             </div>
 
+            <!-- Products -->
             <section class="products">
-                <div class='product'>
+                <div class="product">
                     <div class="image">
-                        <img src='../../assets/images/shoes.png' alt="product image" />
-                        <img src='../../assets/icons/like.svg' alt="like icon" />
+                        <img src="../../assets/images/shoes.png" alt="shoes">
+                        <img src="../../assets/icons/like.svg" alt="like">
                     </div>
                     <div class="info">
-                        <div class='stats'>
+                        <div class="stats">
                             <p class="typography"
-                                style="font-size: 18px; font-weight: 700; color: #344054;text-align: start;width: auto;">
-                                67
-                                500 FCFA</p>
+                                style="text-align: start; color: #344054; font-size: 18px; font-weight: 700;">67 500
+                                FCFA</p>
 
                             <div class="stars">
                                 <p class="typography">121</p>
                                 <div>
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/half-star.svg' alt="star" class="icon" />
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/half-star.svg" alt="star" class="icon">
                                 </div>
                             </div>
                         </div>
-                        <p class="typography" style="text-align: start; color:'#344054';">TDX Sinkers</p>
-                        <p class="typography" style="text-align: start; color:'#344054';">5 types of shoos available</p>
 
-                        <button class="button button-rounded"
-                            style="background-color: #3A4980;margin: 30px 0 0 0;" onclick="window.location.href='./produit.html'">Ajouter
-                            au panier</button>
+                        <p class="typography" style="text-align: start; color: #344054;">TDX Sinkers</p>
+                        <p class="typography" style="text-align: start; color: #344054;">5 types of shoos available</p>
+
+                        <button class="button button-rounded" style="margin-top: 30px; background: #3A4980;"
+                            onclick="window.location.href='./produit.html'">
+                            Ajouter au panier
+                        </button>
                     </div>
                 </div>
-                <div class='product'>
+                <div class="product">
                     <div class="image">
-                        <img src='../../assets/images/shoes.png' alt="product image" />
-                        <img src='../../assets/icons/like.svg' alt="like icon" />
+                        <img src="../../assets/images/shoes.png" alt="shoes">
+                        <img src="../../assets/icons/like.svg" alt="like">
                     </div>
                     <div class="info">
-                        <div class='stats'>
+                        <div class="stats">
                             <p class="typography"
-                                style="font-size: 18px; font-weight: 700; color: #344054;text-align: start;">67 500 FCFA
-                            </p>
+                                style="text-align: start; color: #344054; font-size: 18px; font-weight: 700;">67 500
+                                FCFA</p>
 
                             <div class="stars">
                                 <p class="typography">121</p>
                                 <div>
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/half-star.svg' alt="star" class="icon" />
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/half-star.svg" alt="star" class="icon">
                                 </div>
                             </div>
                         </div>
-                        <p class="typography" style="text-align: start; color:'#344054';">TDX Sinkers</p>
-                        <p class="typography" style="text-align: start; color:'#344054';">5 types of shoos available</p>
 
-                        <button class="button button-rounded"
-                            style="background-color: #3A4980;margin: 30px 0 0 0;" onclick="window.location.href='./produit.html'">Ajouter
-                            au panier</button>
+                        <p class="typography" style="text-align: start; color: #344054;">TDX Sinkers</p>
+                        <p class="typography" style="text-align: start; color: #344054;">5 types of shoos available</p>
+
+                        <button class="button button-rounded" style="margin-top: 30px; background: #3A4980;"
+                            onclick="window.location.href='./produit.html'">
+                            Ajouter au panier
+                        </button>
                     </div>
                 </div>
-                <div class='product'>
+                <div class="product">
                     <div class="image">
-                        <img src='../../assets/images/shoes.png' alt="product image" />
-                        <img src='../../assets/icons/like.svg' alt="like icon" />
+                        <img src="../../assets/images/shoes.png" alt="shoes">
+                        <img src="../../assets/icons/like.svg" alt="like">
                     </div>
                     <div class="info">
-                        <div class='stats'>
+                        <div class="stats">
                             <p class="typography"
-                                style="font-size: 18px; font-weight: 700; color: #344054;text-align: start;">67 500 FCFA
-                            </p>
+                                style="text-align: start; color: #344054; font-size: 18px; font-weight: 700;">67 500
+                                FCFA</p>
 
                             <div class="stars">
                                 <p class="typography">121</p>
                                 <div>
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/half-star.svg' alt="star" class="icon" />
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/half-star.svg" alt="star" class="icon">
                                 </div>
                             </div>
                         </div>
-                        <p class="typography" style="text-align: start; color:'#344054';">TDX Sinkers</p>
-                        <p class="typography" style="text-align: start; color:'#344054';">5 types of shoos available</p>
 
-                        <button class="button button-rounded"
-                            style="background-color: #3A4980;margin: 30px 0 0 0;" onclick="window.location.href='./produit.html'">Ajouter
-                            au panier</button>
+                        <p class="typography" style="text-align: start; color: #344054;">TDX Sinkers</p>
+                        <p class="typography" style="text-align: start; color: #344054;">5 types of shoos available</p>
+
+                        <button class="button button-rounded" style="margin-top: 30px; background: #3A4980;"
+                            onclick="window.location.href='./produit.html'">
+                            Ajouter au panier
+                        </button>
                     </div>
                 </div>
-                <div class='product'>
+                <div class="product">
                     <div class="image">
-                        <img src='../../assets/images/shoes.png' alt="product image" />
-                        <img src='../../assets/icons/like.svg' alt="like icon" />
+                        <img src="../../assets/images/shoes.png" alt="shoes">
+                        <img src="../../assets/icons/like.svg" alt="like">
                     </div>
                     <div class="info">
-                        <div class='stats'>
+                        <div class="stats">
                             <p class="typography"
-                                style="font-size: 18px; font-weight: 700; color: #344054;text-align: start;">67 500 FCFA
-                            </p>
+                                style="text-align: start; color: #344054; font-size: 18px; font-weight: 700;">67 500
+                                FCFA</p>
+
                             <div class="stars">
                                 <p class="typography">121</p>
                                 <div>
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/half-star.svg' alt="star" class="icon" />
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/half-star.svg" alt="star" class="icon">
                                 </div>
                             </div>
                         </div>
-                        <p class="typography" style="text-align: start; color:'#344054';">TDX Sinkers</p>
-                        <p class="typography" style="text-align: start; color:'#344054';">5 types of shoos available</p>
 
-                        <button class="button button-rounded"
-                            style="background-color: #3A4980;margin: 30px 0 0 0;" onclick="window.location.href='./produit.html'">Ajouter
-                            au panier</button>
+                        <p class="typography" style="text-align: start; color: #344054;">TDX Sinkers</p>
+                        <p class="typography" style="text-align: start; color: #344054;">5 types of shoos available</p>
+
+                        <button class="button button-rounded" style="margin-top: 30px; background: #3A4980;"
+                            onclick="window.location.href='./produit.html'">
+                            Ajouter au panier
+                        </button>
                     </div>
                 </div>
-                <div class='product'>
+                <div class="product">
                     <div class="image">
-                        <img src='../../assets/images/shoes.png' alt="product image" />
-                        <img src='../../assets/icons/like.svg' alt="like icon" />
+                        <img src="../../assets/images/shoes.png" alt="shoes">
+                        <img src="../../assets/icons/like.svg" alt="like">
                     </div>
                     <div class="info">
-                        <div class='stats'>
+                        <div class="stats">
                             <p class="typography"
-                                style="font-size: 18px; font-weight: 700; color: #344054;text-align: start;">67 500 FCFA
-                            </p>
+                                style="text-align: start; color: #344054; font-size: 18px; font-weight: 700;">67 500
+                                FCFA</p>
 
                             <div class="stars">
                                 <p class="typography">121</p>
                                 <div>
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/half-star.svg' alt="star" class="icon" />
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/half-star.svg" alt="star" class="icon">
                                 </div>
                             </div>
                         </div>
-                        <p class="typography" style="text-align: start; color:'#344054';">TDX Sinkers</p>
-                        <p class="typography" style="text-align: start; color:'#344054';">5 types of shoos available</p>
 
-                        <button class="button button-rounded"
-                            style="background-color: #3A4980;margin: 30px 0 0 0;" onclick="window.location.href='./produit.html'">Ajouter
-                            au panier</button>
+                        <p class="typography" style="text-align: start; color: #344054;">TDX Sinkers</p>
+                        <p class="typography" style="text-align: start; color: #344054;">5 types of shoos available</p>
+
+                        <button class="button button-rounded" style="margin-top: 30px; background: #3A4980;"
+                            onclick="window.location.href='./produit.html'">
+                            Ajouter au panier
+                        </button>
                     </div>
                 </div>
-                <div class='product'>
+                <div class="product">
                     <div class="image">
-                        <img src='../../assets/images/shoes.png' alt="product image" />
-                        <img src='../../assets/icons/like.svg' alt="like icon" />
+                        <img src="../../assets/images/shoes.png" alt="shoes">
+                        <img src="../../assets/icons/like.svg" alt="like">
                     </div>
                     <div class="info">
-                        <div class='stats'>
+                        <div class="stats">
                             <p class="typography"
-                                style="font-size: 18px; font-weight: 700; color: #344054;text-align: start;">67 500 FCFA
-                            </p>
+                                style="text-align: start; color: #344054; font-size: 18px; font-weight: 700;">67 500
+                                FCFA</p>
 
                             <div class="stars">
                                 <p class="typography">121</p>
                                 <div>
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/half-star.svg' alt="star" class="icon" />
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/half-star.svg" alt="star" class="icon">
                                 </div>
                             </div>
                         </div>
-                        <p class="typography" style="text-align: start; color:'#344054';">TDX Sinkers</p>
-                        <p class="typography" style="text-align: start; color:'#344054';">5 types of shoos available</p>
 
-                        <button class="button button-rounded"
-                            style="background-color: #3A4980;margin: 30px 0 0 0;" onclick="window.location.href='./produit.html'">Ajouter
-                            au panier</button>
+                        <p class="typography" style="text-align: start; color: #344054;">TDX Sinkers</p>
+                        <p class="typography" style="text-align: start; color: #344054;">5 types of shoos available</p>
+
+                        <button class="button button-rounded" style="margin-top: 30px; background: #3A4980;"
+                            onclick="window.location.href='./produit.html'">
+                            Ajouter au panier
+                        </button>
                     </div>
                 </div>
-                <div class='product'>
+                <div class="product">
                     <div class="image">
-                        <img src='../../assets/images/shoes.png' alt="product image" />
-                        <img src='../../assets/icons/like.svg' alt="like icon" />
+                        <img src="../../assets/images/shoes.png" alt="shoes">
+                        <img src="../../assets/icons/like.svg" alt="like">
                     </div>
                     <div class="info">
-                        <div class='stats'>
+                        <div class="stats">
                             <p class="typography"
-                                style="font-size: 18px; font-weight: 700; color: #344054;text-align: start;">67 500 FCFA
-                            </p>
+                                style="text-align: start; color: #344054; font-size: 18px; font-weight: 700;">67 500
+                                FCFA</p>
 
                             <div class="stars">
                                 <p class="typography">121</p>
                                 <div>
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/half-star.svg' alt="star" class="icon" />
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/half-star.svg" alt="star" class="icon">
                                 </div>
                             </div>
                         </div>
-                        <p class="typography" style="text-align: start; color:'#344054';">TDX Sinkers</p>
-                        <p class="typography" style="text-align: start; color:'#344054';">5 types of shoos available</p>
 
-                        <button class="button button-rounded"
-                            style="background-color: #3A4980;margin: 30px 0 0 0;" onclick="window.location.href='./produit.html'">Ajouter
-                            au panier</button>
+                        <p class="typography" style="text-align: start; color: #344054;">TDX Sinkers</p>
+                        <p class="typography" style="text-align: start; color: #344054;">5 types of shoos available</p>
+
+                        <button class="button button-rounded" style="margin-top: 30px; background: #3A4980;"
+                            onclick="window.location.href='./produit.html'">
+                            Ajouter au panier
+                        </button>
                     </div>
                 </div>
-                <div class='product'>
+                <div class="product">
                     <div class="image">
-                        <img src='../../assets/images/shoes.png' alt="product image" />
-                        <img src='../../assets/icons/like.svg' alt="like icon" />
+                        <img src="../../assets/images/shoes.png" alt="shoes">
+                        <img src="../../assets/icons/like.svg" alt="like">
                     </div>
                     <div class="info">
-                        <div class='stats'>
+                        <div class="stats">
                             <p class="typography"
-                                style="font-size: 18px; font-weight: 700; color: #344054;text-align: start;">67 500 FCFA
-                            </p>
+                                style="text-align: start; color: #344054; font-size: 18px; font-weight: 700;">67 500
+                                FCFA</p>
 
                             <div class="stars">
                                 <p class="typography">121</p>
                                 <div>
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/half-star.svg' alt="star" class="icon" />
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/half-star.svg" alt="star" class="icon">
                                 </div>
                             </div>
                         </div>
-                        <p class="typography" style="text-align: start; color:'#344054';">TDX Sinkers</p>
-                        <p class="typography" style="text-align: start; color:'#344054';">5 types of shoos available</p>
 
-                        <button class="button button-rounded"
-                            style="background-color: #3A4980;margin: 30px 0 0 0;" onclick="window.location.href='./produit.html'">Ajouter
-                            au panier</button>
+                        <p class="typography" style="text-align: start; color: #344054;">TDX Sinkers</p>
+                        <p class="typography" style="text-align: start; color: #344054;">5 types of shoos available</p>
+
+                        <button class="button button-rounded" style="margin-top: 30px; background: #3A4980;"
+                            onclick="window.location.href='./produit.html'">
+                            Ajouter au panier
+                        </button>
                     </div>
                 </div>
             </section>
 
-            <div class='pagination'>
+            <!-- Pagination -->
+            <div class="pagination">
                 <button class="button"
                     style="background-color: white; border: 1px solid #F3F3F3; color: #667085; padding: 10px 20px; border-radius: 5px; width: auto; height: calc(100% - 20px)">
                     Previous
                 </button>
 
-                <span class='active'>1</span>
+                <span class="active">1</span>
                 <span>2</span>
                 <span>3</span>
                 <span>4</span>
@@ -362,15 +387,18 @@
                 <span>6</span>
                 <span>7</span>
 
+
                 <button class="button"
-                    style="background-color: white; border: 1px solid #F3F3F3; color: #667085; padding: 10px 20px; border-radius: 5px; width: auto; height: calc(100% - 20px);">
+                    style="background-color: white; border: 1px solid #F3F3F3; color: #667085; padding: 10px 20px; border-radius: 5px; width: auto; height: calc(100% - 20px)">
                     Next
                 </button>
             </div>
         </section>
+
         <footer>
-            <p class="typography" style="font-weight: 600; color: black; font-size: 87.2px;line-height: 124.58px;">
-                Footer</p>
+            <p class="typography" style="color: black; font-size: 87.2px; font-weight: 600; line-height: 124.58px;">
+                Footer
+            </p>
         </footer>
     </main>
 </body>

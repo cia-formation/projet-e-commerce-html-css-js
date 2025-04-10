@@ -12,12 +12,12 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
-    <title>Liste produits</title>
+    <title>Liste Produits</title>
 
     <!-- CSS -->
+    <link rel="stylesheet" href="../../css/composants.css">
     <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="../../css/components.css">
-    <link rel="stylesheet" href="../../css/pages/admin/liste_produit.css">
+    <link rel="stylesheet" href="../../css/pages/admin/liste-produits.css">
 </head>
 
 <body>
@@ -29,58 +29,59 @@
                     <span></span>
                     <h1>MA BOUTIQUE</h1>
                 </div>
+
                 <div class="profile">
-                    <img src="../../assets/images/shop.png" alt="Shop" />
-                    <p class="typography" style="color: black; font-size: 17px; font-weight: 600; text-align: center;">
+                    <img src="../../assets/images/shop.png" alt="profile">
+                    <p class="typography" style="color: black; font-size: 17px; font-weight:600; text-align: center;">
                         Welcome
                     </p>
-                    <p class="typography"
-                        style="color: #FEAF00; font-size: 14px; font-weight: 500; text-align: center;">
-                        admin@email.com
+                    <p class="typography" style="color: #FEAF00; font-size: 14px; font-weight:500; text-align: center;">
+                        admin@email
                     </p>
                 </div>
 
                 <div class="links">
-                    <a href="../admin/liste-produits.html" class="icon-link active-icon-link">
-                        <img src="../../assets/icons/dashboard.svg" alt="Products" />
+                    <a href="#" class="icon-link active-icon-link">
+                        <img src="../../assets/icons/dashboard.svg" alt="dashboard">
                         <span>Produits</span>
                     </a>
                     <a href="../admin/enregistrement-produit.html" class="icon-link">
-                        <img src="../../assets/icons/save.svg" alt="Save" />
+                        <img src="../../assets/icons/save.svg" alt="create">
                         <span>Enregistrer</span>
                     </a>
                     <a href="../admin/mise-a-jour-produit.html" class="icon-link">
-                        <img src="../../assets/icons/update.svg" alt="Update" />
+                        <img src="../../assets/icons/update.svg" alt="update">
                         <span>Mettre a jour</span>
                     </a>
                 </div>
-
             </aside>
+
+
             <a href="../index.html" class="icon-link reversed-icon-link">
-                <img src="../../assets/icons/logout.svg" alt="Logout" />
+                <img src="../../assets/icons/logout.svg" alt="logout">
                 <span>Logout</span>
             </a>
         </div>
 
-        <form class="content">
+        <!-- Content -->
+        <div class="content">
             <div class="toolbar">
-                <img src="../../assets/icons/arrow-left.svg" alt="Arrow left" />
-                <img src="../../assets/icons/bell.svg" alt="Bell" />
+                <img src="../../assets/icons/arrow-left.svg" alt="Arrow left">
+                <img src="../../assets/icons/bell.svg" alt="Bell">
             </div>
 
             <section>
                 <div class="action-heading">
-                    <p class="typography" style="color: black; font-size: 22px; font-weight: 700; text-align: start;">
+                    <p class="typography" style="color: black; font-size: 22px; font-weight: 700; text-align:start;">
                         Liste des produits
                     </p>
-                    <div class="action">
-                        <img src="../../assets/icons/sort.svg" alt="Sort icon">
-                        <a class="button" onclick="window.location.href='enregistrement-produit.html'">AJOUTER NOUVEAU PRODUIT</a>
+                    <div class="actions">
+                        <img src="../../assets/icons/sort.svg" alt="Sort">
+                        <a href="../admin/enregistrement-produit.html" class="button">ADD NEW PRODUCT</a>
                     </div>
                 </div>
 
-
-                <table class="products-table">
+                <table class="product-table">
                     <thead>
                         <tr>
                             <th>#ID</th>
@@ -96,110 +97,105 @@
                     <tbody>
                         <tr>
                             <td>1</td>
-                            <td><img src="../../assets/images/product.png" alt="Product 1"
-                                    style="width: 50px; height: 50px;"></td>
-                            <td>Product A</td>
-                            <td>Category 1</td>
-                            <td>$10.00</td>
+                            <td><img src="../../assets/images/product.png" alt="product"></td>
+                            <td>Produit 1</td>
+                            <td>Categorie 1</td>
+                            <td>$700.00</td>
                             <td>100</td>
-                            <td>2025-03-20</td>
+                            <td>03/04/2025</td>
                             <td>
-                                <img src="../../assets/icons/edit.svg" alt="Edit icon" class="action-icon" onclick="window.location.href='../admin/mise-a-jour-produit.html'">
-                                <img src="../../assets/icons/delete.svg" alt="Delete icon" class="action-icon"
-                                    onclick="openModal()">
+                                <img src="../../assets/icons/edit.svg" alt="edit" class="action-icon"
+                                    onclick="window.location.href = '../admin/mise-a-jour-produit.html'">
+                                <img src="../../assets/icons/delete.svg" alt="delete" class="action-icon"  onclick="openModal()">
                             </td>
                         </tr>
                         <tr>
                             <td>2</td>
-                            <td><img src="../../assets/images/product.png" alt="Product 2"
-                                    style="width: 50px; height: 50px;"></td>
-                            <td>Product B</td>
-                            <td>Category 2</td>
-                            <td>$15.00</td>
-                            <td>50</td>
-                            <td>2025-03-21</td>
+                            <td><img src="../../assets/images/product.png" alt="product"></td>
+                            <td>Produit 2</td>
+                            <td>Categorie 2</td>
+                            <td>$700.00</td>
+                            <td>100</td>
+                            <td>03/04/2025</td>
                             <td>
-                                <img src="../../assets/icons/edit.svg" alt="Edit icon" class="action-icon" onclick="window.location.href='../admin/mise-a-jour-produit.html'">
-                                <img src="../../assets/icons/delete.svg" alt="Delete icon" class="action-icon"
-                                    onclick="openModal()">
+                                <img src="../../assets/icons/edit.svg" alt="edit" class="action-icon"
+                                    onclick="window.location.href = '../admin/mise-a-jour-produit.html'">
+                                <img src="../../assets/icons/delete.svg" alt="delete" class="action-icon"  onclick="openModal()">
                             </td>
                         </tr>
                         <tr>
                             <td>3</td>
-                            <td><img src="../../assets/images/product.png" alt="Product 3"
-                                    style="width: 50px; height: 50px;"></td>
-                            <td>Product C</td>
-                            <td>Category 3</td>
-                            <td>$20.00</td>
-                            <td>30</td>
-                            <td>2025-03-22</td>
+                            <td><img src="../../assets/images/product.png" alt="product"></td>
+                            <td>Produit 3</td>
+                            <td>Categorie 3</td>
+                            <td>$700.00</td>
+                            <td>100</td>
+                            <td>03/04/2025</td>
                             <td>
-                                <img src="../../assets/icons/edit.svg" alt="Edit icon" class="action-icon" onclick="window.location.href='../admin/mise-a-jour-produit.html'">
-                                <img src="../../assets/icons/delete.svg" alt="Delete icon" class="action-icon"
-                                    onclick="openModal()">
+                                <img src="../../assets/icons/edit.svg" alt="edit" class="action-icon"
+                                    onclick="window.location.href = '../admin/mise-a-jour-produit.html'">
+                                <img src="../../assets/icons/delete.svg" alt="delete" class="action-icon"  onclick="openModal()">
                             </td>
                         </tr>
                         <tr>
                             <td>4</td>
-                            <td><img src="../../assets/images/product.png" alt="Product 4"
-                                    style="width: 50px; height: 50px;"></td>
-                            <td>Product D</td>
-                            <td>Category 4</td>
-                            <td>$25.00</td>
-                            <td>20</td>
-                            <td>2025-03-23</td>
+                            <td><img src="../../assets/images/product.png" alt="product"></td>
+                            <td>Produit 4</td>
+                            <td>Categorie 4</td>
+                            <td>$700.00</td>
+                            <td>100</td>
+                            <td>03/04/2025</td>
                             <td>
-                                <img src="../../assets/icons/edit.svg" alt="Edit icon" class="action-icon" onclick="window.location.href='../admin/mise-a-jour-produit.html'">
-                                <img src="../../assets/icons/delete.svg" alt="Delete icon" class="action-icon"
-                                    onclick="openModal()">
+                                <img src="../../assets/icons/edit.svg" alt="edit" class="action-icon"
+                                    onclick="window.location.href = '../admin/mise-a-jour-produit.html'">
+                                <img src="../../assets/icons/delete.svg" alt="delete" class="action-icon"  onclick="openModal()">
                             </td>
                         </tr>
                         <tr>
                             <td>5</td>
-                            <td><img src="../../assets/images/product.png" alt="Product 5"
-                                    style="width: 50px; height: 50px;"></td>
-                            <td>Product E</td>
-                            <td>Category 5</td>
-                            <td>$30.00</td>
-                            <td>10</td>
-                            <td>2025-03-24</td>
+                            <td><img src="../../assets/images/product.png" alt="product"></td>
+                            <td>Produit 5</td>
+                            <td>Categorie 5</td>
+                            <td>$700.00</td>
+                            <td>100</td>
+                            <td>03/04/2025</td>
                             <td>
-                                <img src="../../assets/icons/edit.svg" alt="Edit icon" class="action-icon" onclick="window.location.href='../admin/mise-a-jour-produit.html'">
-                                <img src="../../assets/icons/delete.svg" alt="Delete icon" class="action-icon"
-                                    onclick="openModal()">
+                                <img src="../../assets/icons/edit.svg" alt="edit" class="action-icon"
+                                    onclick="window.location.href = '../admin/mise-a-jour-produit.html'">
+                                <img src="../../assets/icons/delete.svg" alt="delete" class="action-icon"  onclick="openModal()">
                             </td>
                         </tr>
                     </tbody>
                 </table>
             </section>
-        </form>
+        </div>
     </main>
 
-    <!-- Modal -->
     <main class="modal">
         <div class="content">
-            <div class="action-heading" style="border:none;">
+            <div class="action-heading" style="border: none;">
                 <div class="heading">
                     <span style="background-color: #EA4637;"></span>
-                    <h1>MA BOUTIQUE</h1>
+                    <h1>SUPPRESSION</h1>
                 </div>
-                <img src="../../assets/icons/close.svg" alt="Close" class="action-icon" onclick="closeModal()" />
+                <img src="../../assets/icons/close.svg" alt="close" class='action-icon' onclick="closeModal()">
             </div>
 
             <p class="typography" style="color: black; font-size: 16px; font-weight: 600; text-align: start;">
                 Confirmer la suppression du produit.
             </p>
 
-            <div class='input-text input-text-inlined'>
-                <label for='name'>Name</label>
-                <input type='text' name='name' placeholder='Headphone' />
+            <div class="input-text input-text-inlined">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Headphone">
             </div>
 
-            <button style="background-color: #EA4637;width: 80%;margin: 0 auto;" class="button"
-                onclick="window.location.href='liste-produits.html'">CONFIRMER</button>
-
+            <button class="button" style="background-color:#EA4637; width:80%; margin: 0 auto;" onclick="closeModal()">
+                CONFIRMER
+            </button>
         </div>
     </main>
+
     <script src="../../js/script.js"></script>
 </body>
 

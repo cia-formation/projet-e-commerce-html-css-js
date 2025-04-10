@@ -25,10 +25,9 @@
 .produit-unique .content .main-details .images .main-image {
     width: 100%;
     height: 670px;
-    object-fit: cover;
-    object-position: center;
     border: 1px solid #EDF0F8;
     border-radius: 17px;
+    object-fit: cover;
 }
 
 .produit-unique .content .main-details .images div {
@@ -37,6 +36,7 @@
     gap: 10px;
     width: 100%;
 }
+
 .produit-unique .content .main-details .images div.thumbnails-arrows {
     margin-top: 30px;
 }
@@ -46,108 +46,119 @@
     height: 115px;
     object-fit: cover;
     border-radius: 14px;
-    /* border: 3px solid #EDF0F8; */
 }
 
-.produit-unique .content .main-details .images div .left,
-.produit-unique .content .main-details .images div .right {
+
+.produit-unique .content .main-details .images div img.left,
+.produit-unique .content .main-details .images div img.right {
     width: 30px;
     height: 30px;
     margin: auto;
-    object-fit: none;
-    cursor: pointer;
+    object-fit: cover;
 }
+
 
 .produit-unique .content .main-details .images div img.active {
     border: 3px solid #3A4980;
 }
 
 
-.produit-unique .content .main-details .infos{
+.produit-unique .content .main-details .infos {
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: start;
+    align-items: flex-start;
+    justify-content: flex-start;
     gap: 20px;
 }
-.produit-unique .content .main-details .infos aside{
+
+.produit-unique .content .main-details .infos aside {
     display: grid;
     gap: 10px;
     width: 100%;
     padding-bottom: 30px;
     border-bottom: 1px solid #E4E4E4;
 }
-.produit-unique .content .main-details .infos aside p{
+
+.produit-unique .content .main-details .infos aside p {
     text-align: start;
 }
-.produit-unique .content .main-details .infos .name div:nth-child(1){
+
+
+.produit-unique .content .main-details .infos .name div:nth-child(1) {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
-    width: 100%;
+    width: 100%
 }
-.produit-unique .content .main-details .infos .name div:nth-child(1) div{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-.produit-unique .content .main-details .infos .price div{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-}
-.produit-unique .content .main-details .infos .price div div{
+
+.produit-unique .content .main-details .infos .name div:nth-child(1) div {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.produit-unique .content .main-details .infos .messages{
-    border: 1px solid #E4E4E4;
-    padding: 17px;
-    border-radius: 14px;
-    display: grid;
-    gap: 21px;
-    width: 100%;
+
+.produit-unique .content .main-details .infos .price div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
 }
-.produit-unique .content .main-details .infos .quantity{
+
+.produit-unique .content .main-details .infos .price div div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.produit-unique .content .main-details .infos .colors,
+.produit-unique .content .main-details .infos .size {
+    display: grid;
+    gap: 20px;
+}
+
+.produit-unique .content .main-details .infos .colors .checks {
     display: flex;
     gap: 20px;
-    margin: 5px 0;
 }
-.produit-unique .content .main-details .infos .colors{
-    display: grid;
-    gap: 20px;
-}
-.produit-unique .content .main-details .infos .colors .checks{
-    display: flex;
-    gap: 20px;
-}
-.produit-unique .content .main-details .infos .size{
-    display: grid;
-    gap: 20px;
-}
-.produit-unique .content .main-details .infos .size .checks{
+
+.produit-unique .content .main-details .infos .size .checks {
     display: flex;
     gap: 10px;
 }
-.produit-unique .content .main-details .infos .messages .message{
+
+.produit-unique .content .main-details .infos .quantity {
+    display: flex;
+    gap: 20px;
+}
+
+.produit-unique .content .main-details .infos .messages {
+    display: grid;
+    gap: 21px;
+    border: 1px solid #E4E4E4;
+    padding: 17px;
+    border-radius: 14px;
+    width: 100%;
+}
+
+.produit-unique .content .main-details .infos .messages .message {
     display: flex;
     align-items: flex-start;
     gap: 20px;
 }
-.produit-unique .content .main-details .infos .messages .message div{
+
+.produit-unique .content .main-details .infos .messages .message div {
     display: grid;
     gap: 10px;
 }
+
 .produit-unique .content .description {
     display: grid;
     gap: 50px;
 }
 
-.produit-unique .content .description .typography {
+.produit-unique .content .description p {
     text-align: start;
 }
 
@@ -185,38 +196,31 @@
     align-items: center;
 }
 
-.produit-unique .content .products-carrousel .arrow-right,
-.produit-unique .content .products-carrousel .arrow-left {
+.produit-unique .content .products-carrousel .arrow-left,
+.produit-unique .content .products-carrousel .arrow-right {
     position: absolute;
     z-index: 10;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
-}
-
-.produit-unique .content .products-carrousel .arrow-right {
-    right: 0;
 }
 
 .produit-unique .content .products-carrousel .arrow-left {
     left: 0;
 }
-
-.produit-unique .content .products-carrousel .title {
-    text-align: start;
-    font-family: Inter;
+.produit-unique .content .products-carrousel .arrow-right {
+    right: 0;
+}
+.produit-unique .content .products-carrousel .title{
     font-weight: 700;
     font-size: 30px;
     line-height: 38px;
     color: #344054;
 }
-
-.produit-unique .content .products-carrousel .products .product {
+.produit-unique .content .products-carrousel .product{
     width: 200px;
 }
-
-.produit-unique .content .products-carrousel .products .product .image img:nth-child(2) {
+.produit-unique .content .products-carrousel .product .image img:nth-child(2){
     width: 30px;
     height: 30px;
 }

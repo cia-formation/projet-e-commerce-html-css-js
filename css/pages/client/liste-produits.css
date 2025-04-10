@@ -1,32 +1,35 @@
-.liste-produits-client {
+.liste-produits-client{
     display: grid;
     width: 100%;
     max-width: 1500px;
     margin: 0 auto;
-    background-color: white;
-}
-.liste-produits-client .content {
-    display: grid;
-    gap: 40px;
-    width: 100%;
-    padding: 75px 75px 150px 75px;
-    margin: 0 auto;
+    background: white;
 }
 
-.liste-produits-client .content .selects {
+.liste-produits-client .content{
+    display: grid;
+    padding: 75px 75px 150px 75px;
+    gap:40px;
+}
+
+.liste-produits-client .content .selects{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     gap: 30px;
     margin-top: 20px;
+    width: 100%;
 }
+
+
 .liste-produits-client .content .selects aside{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 10px;
 }
+
 .liste-produits-client .content .products{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));

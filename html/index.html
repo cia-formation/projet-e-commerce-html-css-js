@@ -12,11 +12,11 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
-    <title>Login</title>
+    <title>Sign In</title>
 
     <!-- CSS -->
+    <link rel="stylesheet" href="../css/composants.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/components.css">
     <link rel="stylesheet" href="../css/pages/index.css">
 </head>
 
@@ -28,21 +28,21 @@
                 <h1>MA BOUTIQUE</h1>
             </div>
 
-            <p class="typography" style="color: black; font-size: 22px; font-weight: 600">
+            <p class="typography" style="color: black; font-size: 22px; font-weight: 600;">
                 CONNEXION
             </p>
 
             <div class="signin-form">
                 <div class="input-text">
                     <label for="email">Email</label>
-                    <input type="email" name="email" placeholder="Email" />
+                    <input type="email" name="email" id="email" placeholder="Email">
                 </div>
                 <div class="input-text">
                     <label for="password">Mot de passe</label>
-                    <input type="password" name="password" placeholder="Mot de passe" />
+                    <input type="password" name="password" id="password" placeholder="Mot de passe">
                 </div>
                 <button class="button" onclick="login()">SIGN IN</button>
-            </d>
+            </div>
         </div>
     </main>
 

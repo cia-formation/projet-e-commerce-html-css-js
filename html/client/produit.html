@@ -15,15 +15,15 @@
     <title>Produit</title>
 
     <!-- CSS -->
+    <link rel="stylesheet" href="../../css/composants.css">
     <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="../../css/components.css">
     <link rel="stylesheet" href="../../css/pages/client/produit.css">
 </head>
 
 <body>
     <main class="produit-unique">
         <header>
-            <a href="../client/liste-produits.html" class="logo">
+            <a href="./liste-produits.html" class="logo">
                 <p class="typography">FashionHub</p>
             </a>
 
@@ -31,23 +31,21 @@
                 <a href="#">Categories</a>
                 <a href="#">Marques</a>
                 <a href="#">Contacts</a>
-                <a href="#">FAQ’s</a>
+                <a href="#">FAQ</a>
             </div>
 
             <div class="user-info">
-                <div class='cart'>
-                    <img src='../../assets/icons/cart.svg' alt="cart" class="icon" />
+                <div class="cart">
+                    <img src="../../assets/icons/cart.svg" alt="cart" class="icon">
                     <span>3</span>
                 </div>
-
                 <div class="notification">
-                    <img src="../../assets/icons/notification.svg" alt="notification" class="icon" />
+                    <img src="../../assets/icons/notification.svg" alt="notification" class="icon">
                     <span></span>
                 </div>
 
-
                 <div class="user">
-                    <img src='../../assets/images/user.png' alt="user" class="icon" />
+                    <img src="../../assets/images/user.png" alt="user" class="icon">
                     <div>
                         <p class="typography"
                             style="color: #C0C3C6; font-size: 14px; font-weight: 500; line-height: 14.52px;">Good
@@ -61,22 +59,24 @@
         </header>
 
         <section class="content">
+            <!-- Main details -->
             <aside class="main-details">
                 <div class="images">
-                    <img src="../../assets/images/detail1.jpg" alt="Image de détail" class="main-image">
+                    <img src="../../assets/images/detail1.jpg" alt="Produit 1" class="main-image">
                     <div class="thumbnails-arrows">
-                        <img src="../../assets/icons/arrow-left-alt2.svg" alt="arrow left icon" class="left" />
+                        <img src="../../assets/icons/arrow-left-alt2.svg" alt="arrow left" class="left">
                         <div>
-                            <img src="../../assets/images/detail1.jpg" alt="Image de détail" class="active">
-                            <img src="../../assets/images/detail2.jpg" alt="Image de détail">
-                            <img src="../../assets/images/detail3.jpg" alt="Image de détail">
-                            <img src="../../assets/images/detail4.jpg" alt="Image de détail">
-
+                            <img src="../../assets/images/detail1.jpg" alt="Produit 1" class="active">
+                            <img src="../../assets/images/detail2.jpg" alt="Produit 2">
+                            <img src="../../assets/images/detail3.jpg" alt="Produit 3">
+                            <img src="../../assets/images/detail4.jpg" alt="Produit 4">
                         </div>
-                        <img src="../../assets/icons/arrow-right-alt2.svg" alt="arrow right icon" class="right" />
+                        <img src="../../assets/icons/arrow-right-alt2.svg" alt="arrow right" class="right">
                     </div>
                 </div>
+
                 <div class="infos">
+                    <!-- Breadcrumb -->
                     <div class="breadcrumb">
                         <p class="typography">Home</p>
                         <img src="../../assets/icons/arrow-right-alt2.svg" alt="arrow right">
@@ -84,78 +84,87 @@
                         <img src="../../assets/icons/arrow-right-alt2.svg" alt="arrow right">
                         <p class="typography active">Embrace Sideboard</p>
                     </div>
+
+                    <!-- Name  -->
                     <aside class="name">
                         <div>
-                            <p class="typography" style="font-size: 28px; font-weight: 600; color: black;">
+                            <p class="typography" style="color: black; font-size: 28px; font-weight: 600;">
                                 < Nom du produit>
                             </p>
 
                             <div class="tags">
-                                <div class="tag" style="background-color: #D46F7715;">
-                                    <img src='../../assets/icons/heart.svg' alt="heart" class="icon" />
-                                    <span style="color: #D46F77;">109</span>
+                                <div class="tag" style="background: #D46F7715;">
+                                    <img src="../../assets/icons/heart.svg" alt="heart" class="icon">
+                                    <span style="color:#D46F77;">109</span>
                                 </div>
-                                <div class="tag" style="background-color: #3A498015;">
-                                    <img src='../../assets/icons/book-mark.svg' alt="book-mark icon" class="icon" />
+                                <div class="tag" style="background: #3A498015;">
+                                    <img src="../../assets/icons/book-mark.svg" alt="book-mark" class="icon">
                                 </div>
-                                <div class="tag" style="background-color: #3A498015;">
-                                    <img src='../../assets/icons/share.svg' alt="share icon" class="icon" />
+                                <div class="tag" style="background: #3A498015;">
+                                    <img src="../../assets/icons//share.svg" alt="share" class="icon">
                                 </div>
                             </div>
-
                         </div>
+
                         <p class="typography">
                             < Description courte du produit pouvant aller sur deux lignes au maximum, pour chaque
                                 produit.>
                         </p>
                     </aside>
 
+                    <!-- Price -->
                     <aside class="price">
                         <div>
-                            <p class="typography" style="font-size: 34px; font-weight: 700; color: #3A4980;">71 560 FCFA
+                            <p class="typography" style="color: #3A4980; font-size: 34px; font-weight: 700;">
+                                71 560 FCFA
                             </p>
 
                             <div class="tags">
-                                <div class="tag" style="background-color: #D48D3B15;">
-                                    <img src='../../assets/icons/star-alt2.svg' alt="star icon" class="icon" />
-                                    <span style="color: #D48D3B;">4.8</span>
+                                <div class="tag" style="background: #D4803B15;">
+                                    <img src="../../assets/icons/star-alt2.svg" alt="star" class="icon">
+                                    <span style="color:#D4803B;">4.8</span>
                                 </div>
-                                <div class="tag" style="background-color: #3A498015;">
-                                    <img src='../../assets/icons/comment.svg' alt="comment icon" class="icon" />
-                                    <span style="color: #3A4980;">67 Reviews</span>
+                                <div class="tag" style="background: #3A498015;">
+                                    <img src="../../assets/icons/comment.svg" alt="comment" class="icon">
+                                    <span style="color:#3A4980;">67 Reviews</span>
                                 </div>
                             </div>
-
                         </div>
+
                         <div>
                             <p class="typography"
-                                style="font-size: 21px; font-weight: 400;text-decoration: line-through;">80
-                                000 FCFA</p>
+                                style="font-size: 21px; font-weight: 400;text-decoration: line-through;">
+                                80 000 FCFA
+                            </p>
                             <p class="typography">
-                                <span style="color: #3E9242;">93%</span>
+                                <span style="color: #3E9242">93%</span>
                                 of buyers have recommended this.
                             </p>
                         </div>
                     </aside>
-                    <!-- Couleurs -->
+
+                    <!-- Colors -->
                     <aside class="colors">
                         <p class="typography">Choose a Color</p>
                         <div class="checks">
                             <div class="color-radio">
                                 <input type="radio" name="color" id="orange" value="orange" checked>
-                                <img src="../../assets/icons/check-alt.svg" alt="check icon" class="icon" />
+                                <img src="../../assets/icons/check-alt.svg" alt="check" class="icon">
                             </div>
                             <div class="color-radio">
-                                <input type="radio" name="color" id="green" value="green" style="background-color: #BBD278 ;">
+                                <input type="radio" name="color" id="green" value="green" style="background: #BBD278;">
                             </div>
                             <div class="color-radio">
-                                <input type="radio" name="color" id="purple" value="purple" style="background-color: #BBC1F8 ;">
+                                <input type="radio" name="color" id="purple" value="purple"
+                                    style="background: #BBC1FB;">
                             </div>
                             <div class="color-radio">
-                                <input type="radio" name="color" id="pink" value="pink" style="background-color: #FFD3F8 ;">
+                                <input type="radio" name="color" id="pink" value="pink" style="background: #FFD3F8;">
                             </div>
                         </div>
                     </aside>
+
+                    <!-- Sizes -->
                     <aside class="size">
                         <p class="typography">Choose a Size</p>
                         <div class="checks">
@@ -164,40 +173,43 @@
                                 <label for="small">Small</label>
                             </div>
                             <div class="radio">
-                                <input type="radio" name="size" id="small" value="small">
-                                <label for="small">Small</label>
+                                <input type="radio" name="size" id="small-x" value="small-x">
+                                <label for="small-x">Small-x</label>
                             </div>
                             <div class="radio">
-                                <input type="radio" name="size" id="small" value="small">
-                                <label for="small">Small</label>
+                                <input type="radio" name="size" id="medium" value="medium">
+                                <label for="medium">Medium</label>
                             </div>
                             <div class="radio">
-                                <input type="radio" name="size" id="small" value="small">
-                                <label for="small">Small</label>
+                                <input type="radio" name="size" id="large" value="large">
+                                <label for="large">Large</label>
                             </div>
                             <div class="radio">
-                                <input type="radio" name="size" id="small" value="small">
-                                <label for="small">Small</label>
+                                <input type="radio" name="size" id="extra-large" value="extra-large">
+                                <label for="extra-large">Extra large</label>
                             </div>
                         </div>
                     </aside>
+
+                    <!-- Quantity -->
                     <div class="quantity">
                         <div class="quantity-input">
                             <span>-</span>
-                            <input type="number" min="1" max="100" value="1" class="quantity-input-field">
+                            <input type="number" name="quantity" min="1" max="100" value="1">
                             <span>+</span>
                         </div>
-                        <button class='button button-rounded' style="background-color: #3A4980;">
-                            <img src="../../assets/icons/bag-white.svg" alt="bag icon" class="icon" />
+                        <button class="button button-rounded" style="background: #3A4980;">
+                            <img src="../../assets/icons/bag-white.svg" alt="bag icon" class="icon">
                             <span>Ajouter au panier</span>
                         </button>
-
                     </div>
+
+                    <!-- Messages -->
                     <div class="messages">
                         <div class="message">
-                            <img src="../../assets/icons/bus.svg" alt="bus icon" class="icon" />
+                            <img src="../../assets/icons/bus.svg" alt="bus">
                             <div>
-                                <p class="typography" style="font-weight: 700; font-size: 17px; color: #1D364D;">Free
+                                <p class="typography" style="color: #1D364D; font-size: 17px; font-weight: 700;">Free
                                     Delivery</p>
                                 <p class="typography" style="font-size: 14px;">Enter your Postal code for Delivery
                                     Availability</p>
@@ -205,319 +217,274 @@
                         </div>
                         <div class="divider"></div>
                         <div class="message">
-                            <img src="../../assets/icons/bag.svg" alt="bag icon" class="icon" />
+                            <img src="../../assets/icons/bag.svg" alt="bag">
                             <div>
-                                <p class="typography">Return Delivery</p>
-                                <p class="typography">Free 30 days Delivery Return. Details</p>
+                                <p class="typography" style="color: #1D364D; font-size: 17px; font-weight: 700;">Return
+                                    Delivery</p>
+                                <p class="typography" style="font-size: 14px;">Free 30 days Delivery Return. Details</p>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </aside>
 
-
+            <!-- Description -->
             <div class="toggle-bar">
                 <p class="typography active">Description</p>
                 <p class="typography">Reviews</p>
             </div>
+
             <div class="description">
                 <aside>
-                    <p class="typography title">Product Description</p>
-                    <p class="typography" style="line-height: 27.2px;">When it's colder than the far side of the moon
-                        and spitting rain too, you've
-                        still got to look good. From water-repellent leather to a rugged outsole, the Lunar Force 1
-                        adapts AF-1 style, so you can keep your flame burning when the weather hits. Metal lace hardware
-                        and extended tongue bring mountain boot toughness, while the star-studded toe design gives your
-                        look the edge</p>
+                    <p class="typography title">Product Description </p>
+                    <p class="typography" style="line-height:27.2px;">When it's colder than the far side of the moon and
+                        spitting rain too, you've still got to look good. From water-repellent leather to a rugged
+                        outsole, the Lunar Force 1 adapts AF-1 style, so you can keep your flame burning when the
+                        weather hits. Metal lace hardware and extended tongue bring mountain boot toughness, while the
+                        star-studded toe design gives your look the edge</p>
                 </aside>
+
                 <aside>
-                    <p class="typography title">Benefits</p>
+                    <p class="typography title">Benefits </p>
                     <div>
                         <p class="typography">
-                            <img src='../../assets/icons/check.svg' alt="check" class="icon" />
-
+                            <img src="../../assets/icons/check.svg" alt="check" class="icon">
                             Durable leather is easily cleanable so you can keep your look fresh.
                         </p>
                         <p class="typography">
-                            <img src='../../assets/icons/check.svg' alt="check" class="icon" />
-
+                            <img src="../../assets/icons/check.svg" alt="check" class="icon">
                             Water-repellent finish and internal membrane help keep your feet dry.
                         </p>
                         <p class="typography">
-                            <img src='../../assets/icons/check.svg' alt="check" class="icon" />
-
+                            <img src="../../assets/icons/check.svg" alt="check" class="icon">
                             Toe piece with star pattern adds durability.
                         </p>
                         <p class="typography">
-                            <img src='../../assets/icons/check.svg' alt="check" class="icon" />
-
-                            Synthetic insulation helps keep you warm.
+                            <img src="../../assets/icons/check.svg" alt="check" class="icon">
+                            Synthetic insulation helps keep you warm
                         </p>
                         <p class="typography">
-                            <img src='../../assets/icons/check.svg' alt="check" class="icon" />
-
+                            <img src="../../assets/icons/check.svg" alt="check" class="icon">
                             Originally designed for performance hoops, the Air unit delivers lightweight cushioning.
                         </p>
                         <p class="typography">
-                            <img src='../../assets/icons/check.svg' alt="check" class="icon" />
-
+                            <img src="../../assets/icons/check.svg" alt="check" class="icon">
                             Plush tongue wraps over the ankle to help keep out the moisture and cold.
                         </p>
                         <p class="typography">
-                            <img src='../../assets/icons/check.svg' alt="check" class="icon" />
-
+                            <img src="../../assets/icons/check.svg" alt="check" class="icon">
                             Rubber outsole with aggressive traction pattern adds durable grip.
                         </p>
                         <p class="typography">
-                            <img src='../../assets/icons/check.svg' alt="check" class="icon" />
-
+                            <img src="../../assets/icons/check.svg" alt="check" class="icon">
                             Durable leather is easily cleanable so you can keep your look fresh.
                         </p>
                     </div>
+
                 </aside>
+
                 <aside>
                     <p class="typography title">Product Details</p>
                     <div>
                         <p class="typography">
-                            <img src='../../assets/icons/check.svg' alt="check" class="icon" />
-
+                            <img src="../../assets/icons/check.svg" alt="check" class="icon">
                             Not intended for use as Personal Protective Equipment (PPE)
                         </p>
                         <p class="typography">
-                            <img src='../../assets/icons/check.svg' alt="check" class="icon" />
-
+                            <img src="../../assets/icons/check.svg" alt="check" class="icon">
                             Water-repellent finish and internal membrane help keep your feet dry.
                         </p>
                     </div>
                 </aside>
+
                 <aside>
-                    <p class="typography title">More Details</p>
+                    <p class="typography title">More Details </p>
                     <div>
                         <p class="typography">
-                            <img src='../../assets/icons/check.svg' alt="check" class="icon" />
-
+                            <img src="../../assets/icons/check.svg" alt="check" class="icon">
                             Lunarlon midsole delivers ultra-plush responsiveness
                         </p>
                         <p class="typography">
-                            <img src='../../assets/icons/check.svg' alt="check" class="icon" />
-
+                            <img src="../../assets/icons/check.svg" alt="check" class="icon">
                             Encapsulated Air-Sole heel unit for lightweight cushioning
                         </p>
                         <p class="typography">
-                            <img src='../../assets/icons/check.svg' alt="check" class="icon" />
-
+                            <img src="../../assets/icons/check.svg" alt="check" class="icon">
                             Colour Shown: Ale Brown/Black/Goldtone/Ale Brown
                         </p>
                         <p class="typography">
-                            <img src='../../assets/icons/check.svg' alt="check" class="icon" />
-
+                            <img src="../../assets/icons/check.svg" alt="check" class="icon">
                             Style: 805899-202
                         </p>
                     </div>
                 </aside>
             </div>
 
+            <!-- Similar products -->
             <div class="products-carrousel">
                 <p class="typography title">Similar Items You Might Also Like</p>
-                <img src="../../assets/icons/arrow-left-alt.svg" alt="arrow left icon" class="arrow-left" />
-                <img src="../../assets/icons/arrow-right-alt.svg" alt="arrow right icon" class="arrow-right" />
+                <img src="../../assets/icons/arrow-left-alt.svg" alt="arrow left" class="arrow-left">
+                <img src="../../assets/icons/arrow-right-alt.svg" alt="arrow right" class="arrow-right">
 
                 <div class="products">
-                    <div class='product'>
+                    <div class="product">
                         <div class="image">
-                            <img src='../../assets/images/shoes.png' alt="product image" />
-                            <img src='../../assets/icons/like.svg' alt="like icon" />
+                            <img src="../../assets/images/shoes.png" alt="shoes">
+                            <img src="../../assets/icons/like.svg" alt="like">
                         </div>
                         <div class="info">
-                            <p class="typography" style="text-align: start; color:'#344054';">TDX Sinkers</p>
+                            <p class="typography" style="text-align: start; color: #344054;">TDX Sinkers</p>
+
                             <p class="typography"
-                                style="font-size: 18px; font-weight: 700; color: #344054;text-align: start;">67 500 FCFA
-                            </p>
-                            <p class="typography" style="text-align: start; color:'#344054';">5 types of shoos available
+                                style="text-align: start; color: #344054; font-size: 18px; font-weight: 700;">67 500
+                                FCFA</p>
+
+                            <p class="typography" style="text-align: start; color: #344054;">5 types of shoos available
                             </p>
 
                             <div class="stars">
                                 <div>
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/half-star.svg' alt="star" class="icon" />
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/half-star.svg" alt="star" class="icon">
                                 </div>
                                 <p class="typography">121</p>
                             </div>
                         </div>
                     </div>
-                    <div class='product'>
+                    <div class="product">
                         <div class="image">
-                            <img src='../../assets/images/shoes.png' alt="product image" />
-                            <img src='../../assets/icons/like.svg' alt="like icon" />
+                            <img src="../../assets/images/shoes.png" alt="shoes">
+                            <img src="../../assets/icons/like.svg" alt="like">
                         </div>
                         <div class="info">
-                            <p class="typography" style="text-align: start; color:'#344054';">TDX Sinkers</p>
+                            <p class="typography" style="text-align: start; color: #344054;">TDX Sinkers</p>
+
                             <p class="typography"
-                                style="font-size: 18px; font-weight: 700; color: #344054;text-align: start;">67 500 FCFA
-                            </p>
-                            <p class="typography" style="text-align: start; color:'#344054';">5 types of shoos available
+                                style="text-align: start; color: #344054; font-size: 18px; font-weight: 700;">67 500
+                                FCFA</p>
+
+                            <p class="typography" style="text-align: start; color: #344054;">5 types of shoos available
                             </p>
 
                             <div class="stars">
                                 <div>
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/half-star.svg' alt="star" class="icon" />
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/half-star.svg" alt="star" class="icon">
                                 </div>
                                 <p class="typography">121</p>
                             </div>
                         </div>
                     </div>
-                    <div class='product'>
+                    <div class="product">
                         <div class="image">
-                            <img src='../../assets/images/shoes.png' alt="product image" />
-                            <img src='../../assets/icons/like.svg' alt="like icon" />
+                            <img src="../../assets/images/shoes.png" alt="shoes">
+                            <img src="../../assets/icons/like.svg" alt="like">
                         </div>
                         <div class="info">
-                            <p class="typography" style="text-align: start; color:'#344054';">TDX Sinkers</p>
+                            <p class="typography" style="text-align: start; color: #344054;">TDX Sinkers</p>
+
                             <p class="typography"
-                                style="font-size: 18px; font-weight: 700; color: #344054;text-align: start;">67 500 FCFA
-                            </p>
-                            <p class="typography" style="text-align: start; color:'#344054';">5 types of shoos available
+                                style="text-align: start; color: #344054; font-size: 18px; font-weight: 700;">67 500
+                                FCFA</p>
+
+                            <p class="typography" style="text-align: start; color: #344054;">5 types of shoos available
                             </p>
 
                             <div class="stars">
                                 <div>
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/half-star.svg' alt="star" class="icon" />
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/half-star.svg" alt="star" class="icon">
                                 </div>
                                 <p class="typography">121</p>
                             </div>
                         </div>
                     </div>
-                    <div class='product'>
+                    <div class="product">
                         <div class="image">
-                            <img src='../../assets/images/shoes.png' alt="product image" />
-                            <img src='../../assets/icons/like.svg' alt="like icon" />
+                            <img src="../../assets/images/shoes.png" alt="shoes">
+                            <img src="../../assets/icons/like.svg" alt="like">
                         </div>
                         <div class="info">
-                            <p class="typography" style="text-align: start; color:'#344054';">TDX Sinkers</p>
+                            <p class="typography" style="text-align: start; color: #344054;">TDX Sinkers</p>
+
                             <p class="typography"
-                                style="font-size: 18px; font-weight: 700; color: #344054;text-align: start;">67 500 FCFA
-                            </p>
-                            <p class="typography" style="text-align: start; color:'#344054';">5 types of shoos available
+                                style="text-align: start; color: #344054; font-size: 18px; font-weight: 700;">67 500
+                                FCFA</p>
+
+                            <p class="typography" style="text-align: start; color: #344054;">5 types of shoos available
                             </p>
 
                             <div class="stars">
                                 <div>
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/half-star.svg' alt="star" class="icon" />
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/half-star.svg" alt="star" class="icon">
                                 </div>
                                 <p class="typography">121</p>
                             </div>
                         </div>
                     </div>
-                    <div class='product'>
+                    <div class="product">
                         <div class="image">
-                            <img src='../../assets/images/shoes.png' alt="product image" />
-                            <img src='../../assets/icons/like.svg' alt="like icon" />
+                            <img src="../../assets/images/shoes.png" alt="shoes">
+                            <img src="../../assets/icons/like.svg" alt="like">
                         </div>
                         <div class="info">
-                            <p class="typography" style="text-align: start; color:'#344054';">TDX Sinkers</p>
+                            <p class="typography" style="text-align: start; color: #344054;">TDX Sinkers</p>
+
                             <p class="typography"
-                                style="font-size: 18px; font-weight: 700; color: #344054;text-align: start;">67 500 FCFA
-                            </p>
-                            <p class="typography" style="text-align: start; color:'#344054';">5 types of shoos available
+                                style="text-align: start; color: #344054; font-size: 18px; font-weight: 700;">67 500
+                                FCFA</p>
+
+                            <p class="typography" style="text-align: start; color: #344054;">5 types of shoos available
                             </p>
 
                             <div class="stars">
                                 <div>
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/half-star.svg' alt="star" class="icon" />
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/half-star.svg" alt="star" class="icon">
                                 </div>
                                 <p class="typography">121</p>
                             </div>
                         </div>
                     </div>
-                    <div class='product'>
+                    <div class="product">
                         <div class="image">
-                            <img src='../../assets/images/shoes.png' alt="product image" />
-                            <img src='../../assets/icons/like.svg' alt="like icon" />
+                            <img src="../../assets/images/shoes.png" alt="shoes">
+                            <img src="../../assets/icons/like.svg" alt="like">
                         </div>
                         <div class="info">
-                            <p class="typography" style="text-align: start; color:'#344054';">TDX Sinkers</p>
+                            <p class="typography" style="text-align: start; color: #344054;">TDX Sinkers</p>
+
                             <p class="typography"
-                                style="font-size: 18px; font-weight: 700; color: #344054;text-align: start;">67 500 FCFA
-                            </p>
-                            <p class="typography" style="text-align: start; color:'#344054';">5 types of shoos available
+                                style="text-align: start; color: #344054; font-size: 18px; font-weight: 700;">67 500
+                                FCFA</p>
+
+                            <p class="typography" style="text-align: start; color: #344054;">5 types of shoos available
                             </p>
 
                             <div class="stars">
                                 <div>
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/half-star.svg' alt="star" class="icon" />
-                                </div>
-                                <p class="typography">121</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class='product'>
-                        <div class="image">
-                            <img src='../../assets/images/shoes.png' alt="product image" />
-                            <img src='../../assets/icons/like.svg' alt="like icon" />
-                        </div>
-                        <div class="info">
-                            <p class="typography" style="text-align: start; color:'#344054';">TDX Sinkers</p>
-                            <p class="typography"
-                                style="font-size: 18px; font-weight: 700; color: #344054;text-align: start;">67 500 FCFA
-                            </p>
-                            <p class="typography" style="text-align: start; color:'#344054';">5 types of shoos available
-                            </p>
-
-                            <div class="stars">
-                                <div>
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/half-star.svg' alt="star" class="icon" />
-                                </div>
-                                <p class="typography">121</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class='product'>
-                        <div class="image">
-                            <img src='../../assets/images/shoes.png' alt="product image" />
-                            <img src='../../assets/icons/like.svg' alt="like icon" />
-                        </div>
-                        <div class="info">
-                            <p class="typography" style="text-align: start; color:'#344054';">TDX Sinkers</p>
-                            <p class="typography"
-                                style="font-size: 18px; font-weight: 700; color: #344054;text-align: start;">67 500 FCFA
-                            </p>
-                            <p class="typography" style="text-align: start; color:'#344054';">5 types of shoos available
-                            </p>
-
-                            <div class="stars">
-                                <div>
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/star.svg' alt="star" class="icon" />
-                                    <img src='../../assets/icons/half-star.svg' alt="star" class="icon" />
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/star.svg" alt="star" class="icon">
+                                    <img src="../../assets/icons/half-star.svg" alt="star" class="icon">
                                 </div>
                                 <p class="typography">121</p>
                             </div>
@@ -528,8 +495,9 @@
         </section>
 
         <footer>
-            <p class="typography" style="font-weight: 600; color: black; font-size: 87.2px;line-height: 124.58px;">
-                Footer</p>
+            <p class="typography" style="color: black; font-size: 87.2px; font-weight: 600; line-height: 124.58px;">
+                Footer
+            </p>
         </footer>
     </main>
 </body>
