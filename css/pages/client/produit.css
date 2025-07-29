@@ -7,7 +7,7 @@
 }
 
 
-.produit-unique .content {
+{
     display: grid;
     gap: 40px;
     width: 100%;
@@ -15,14 +15,14 @@
     margin: 0 auto;
 }
 
-.produit-unique .content .main-details {
+.main-details {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
     margin-bottom: 50px;
 }
 
-.produit-unique .content .main-details .images .main-image {
+.main-details .images .main-image {
     width: 100%;
     height: 670px;
     border: 1px solid #EDF0F8;
@@ -30,18 +30,18 @@
     object-fit: cover;
 }
 
-.produit-unique .content .main-details .images div {
+.main-details .images div {
     display: flex;
     justify-content: space-evenly;
     gap: 10px;
     width: 100%;
 }
 
-.produit-unique .content .main-details .images div.thumbnails-arrows {
+.main-details .images div.thumbnails-arrows {
     margin-top: 30px;
 }
 
-.produit-unique .content .main-details .images div img {
+.main-details .images div img {
     width: 115px;
     height: 115px;
     object-fit: cover;
@@ -49,8 +49,8 @@
 }
 
 
-.produit-unique .content .main-details .images div img.left,
-.produit-unique .content .main-details .images div img.right {
+.main-details .images div img.left,
+.main-details .images div img.right {
     width: 30px;
     height: 30px;
     margin: auto;
@@ -58,12 +58,12 @@
 }
 
 
-.produit-unique .content .main-details .images div img.active {
+.main-details .images div img.active {
     border: 3px solid #3A4980;
 }
 
 
-.produit-unique .content .main-details .infos {
+.main-details .infos {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -71,7 +71,7 @@
     gap: 20px;
 }
 
-.produit-unique .content .main-details .infos aside {
+.main-details .infos aside {
     display: grid;
     gap: 10px;
     width: 100%;
@@ -79,12 +79,12 @@
     border-bottom: 1px solid #E4E4E4;
 }
 
-.produit-unique .content .main-details .infos aside p {
+.main-details .infos aside p {
     text-align: start;
 }
 
 
-.produit-unique .content .main-details .infos .name div:nth-child(1) {
+.main-details .infos .name div:nth-child(1) {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -92,48 +92,48 @@
     width: 100%
 }
 
-.produit-unique .content .main-details .infos .name div:nth-child(1) div {
+.main-details .infos .name div:nth-child(1) div {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
 
-.produit-unique .content .main-details .infos .price div {
+.main-details .infos .price div {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
 }
 
-.produit-unique .content .main-details .infos .price div div {
+.main-details .infos .price div div {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.produit-unique .content .main-details .infos .colors,
-.produit-unique .content .main-details .infos .size {
+.main-details .infos .colors,
+.main-details .infos .size {
     display: grid;
     gap: 20px;
 }
 
-.produit-unique .content .main-details .infos .colors .checks {
+.main-details .infos .colors .checks {
     display: flex;
     gap: 20px;
 }
 
-.produit-unique .content .main-details .infos .size .checks {
+.main-details .infos .size .checks {
     display: flex;
     gap: 10px;
 }
 
-.produit-unique .content .main-details .infos .quantity {
+.main-details .infos .quantity {
     display: flex;
     gap: 20px;
 }
 
-.produit-unique .content .main-details .infos .messages {
+.main-details .infos .messages {
     display: grid;
     gap: 21px;
     border: 1px solid #E4E4E4;
@@ -142,44 +142,44 @@
     width: 100%;
 }
 
-.produit-unique .content .main-details .infos .messages .message {
+.main-details .infos .messages .message {
     display: flex;
     align-items: flex-start;
     gap: 20px;
 }
 
-.produit-unique .content .main-details .infos .messages .message div {
+.main-details .infos .messages .message div {
     display: grid;
     gap: 10px;
 }
 
-.produit-unique .content .description {
+.description {
     display: grid;
     gap: 50px;
 }
 
-.produit-unique .content .description p {
+.description p {
     text-align: start;
 }
 
-.produit-unique .content .description aside {
+.description aside {
     display: grid;
     gap: 20px;
 }
 
-.produit-unique .content .description aside .title {
+.description aside .title {
     font-weight: 700;
     font-size: 24px;
     line-height: 100%;
     color: #344054;
 }
 
-.produit-unique .content .description aside div {
+.description aside div {
     display: grid;
     gap: 10px;
 }
 
-.produit-unique .content .products-carrousel {
+.products-carrousel {
     display: grid;
     gap: 20px;
     width: 100%;
@@ -188,7 +188,7 @@
     margin-top: 50px;
 }
 
-.produit-unique .content .products-carrousel .products {
+.products-carrousel .products {
     display: flex;
     gap: 20px;
     width: 100%;
@@ -196,8 +196,8 @@
     align-items: center;
 }
 
-.produit-unique .content .products-carrousel .arrow-left,
-.produit-unique .content .products-carrousel .arrow-right {
+.products-carrousel .arrow-left,
+.products-carrousel .arrow-right {
     position: absolute;
     z-index: 10;
     top: 50%;
@@ -205,22 +205,22 @@
     cursor: pointer;
 }
 
-.produit-unique .content .products-carrousel .arrow-left {
+.products-carrousel .arrow-left {
     left: 0;
 }
-.produit-unique .content .products-carrousel .arrow-right {
+.products-carrousel .arrow-right {
     right: 0;
 }
-.produit-unique .content .products-carrousel .title{
+.products-carrousel .title{
     font-weight: 700;
     font-size: 30px;
     line-height: 38px;
     color: #344054;
 }
-.produit-unique .content .products-carrousel .product{
+.products-carrousel .product{
     width: 200px;
 }
-.produit-unique .content .products-carrousel .product .image img:nth-child(2){
+.products-carrousel .product .image img:nth-child(2){
     width: 30px;
     height: 30px;
 }
